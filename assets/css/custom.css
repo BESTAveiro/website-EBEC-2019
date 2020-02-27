@@ -53,8 +53,6 @@
   height: 1.2em;
   vertical-align: bottom;
   margin-right: 0.2em;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
 }
 .tabs ul li label:hover i, .tabs ul li label:focus i, .tabs ul li label:active i {
   fill: #EEA225;

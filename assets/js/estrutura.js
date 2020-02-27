@@ -9,19 +9,38 @@ $(document).ready(function () {
             dropdowns: [
                 {
                     title: "Sobre a EBEC",
-                    menu: ["EBEC Aveiro", "Edições Anteriores", "Programa", "Inscrição", "Testemunhos"]
+                    menu: [
+                        {nome: "EBEC Aveiro", link: "#ebec"},
+                        {nome: "Edições Anteriores", link: "#ebecAnt"}, 
+                        {nome: "Programa",link: "#programa" }, 
+                        {nome:"Inscrição",link: "#apply"}, 
+                        {nome:"Testemunhos", link:"#testemunhos"}
+                    ]
                 },
                 {
                     title: "Mais sobre a EBEC",
-                    menu: ["FAQ", "Júri", "Parceiros", "Equipa", "Torne-se nosso Parceiro", "Contactos"]
+                    menu: [
+                        {nome:"FAQ", link:"#faqs"}, 
+                        /*{nome:"Júri", link:"#juri"},*/
+                        {nome:"Parceiros", link: "#partners"} , 
+                        {nome: "Equipa", link: "#team"}, 
+                        {nome:"Torne-se nosso Parceiro", link: "#parceria"}, 
+                        {nome: "Contactos",link: "#contactos"}
+                    ]
                 },
-                {title: "A Organização", menu: ["Sobre o BEST Aveiro", "Informações"]}
+                {
+                    title: "A Organização", 
+                    menu: [
+                        {nome:"Sobre o BEST Aveiro",link: "#best"}, 
+                        {nome:"Informações", link: "#info"}
+                    ]
+                }
             ]
 
         },
         entrada: {
             logo: "assets/img/logos/ebec-aveiro-color.png",
-            title: "14, 15, 16, 17 e 20 de março<br class='hidden-xs'> de 2019"
+            title: "12, 14, 15 e 18 de março"
         },
         ebecAveiro: {
             sectionHeading: "EBEC Aveiro",
@@ -36,17 +55,16 @@ $(document).ready(function () {
                     ps: [
                         "É com prazer que o <b style='color:orange'>BEST Aveiro</b> organiza anualmente " +
                         "uma das 88 fases locais do projeto EBEC.",
-                        "Com a nona edição da competição a ocorrer em <b style='color:orange'>março de 2019</b>, evento que tem vindo a contar com um" +
+                        "Com a décima edição da competição a ocorrer em <b style='color:orange'>março de 2020</b>, evento que tem vindo a contar com um" +
                         "grande número de participantes em todas as edições, consideramo-lo um dos eventos de maior destaque" +
                         "do BEST Aveiro. Direcionado aos alunos da Universidade de Aveiro, a EBEC Aveiro pretende ser um" +
                         "momento onde criatividade, desafio, energia, flexibilidade e espírito de equipa são postos em prática.",
                         "No sentido de promover uma melhor relação entre estudantes e empresas, a EBEC Aveiro organizará," +
-                        "à parte da competição, uma <span style='color:orange'>feira de empresas</span> seguida" +
-                        "de um cocktail network, que irão ocorrer no dia 14 de março.",
+                        "à parte da competição, uma <span style='color:orange'>feira de empresas</span> juntamente" +
+                        "com uma formação complementar para os nossos participants, que irão ocorrer no dia 12 de março.",
                         "Para qualquer dúvida, podes-se informar na secção FAQ ou nos contactar por meio da nossa equipa" +
                         "ou por meios da secção de informações."
                     ],
-                    subscribe: "Inscreve-te já!",
                     img: "assets/img/event/ebec-aveiro.png"
                 },
                 seccao2: {
@@ -69,8 +87,8 @@ $(document).ready(function () {
                 },
                 seccao3: [
                     "O BEST Aveiro volta a organizar mais uma edição dos <b class=\"text-orange\">BEST Training Days</b>, " +
-                    "da EBEC Aveiro 2019, onde terás a oportunidade de desenvolver as tuas capacidades numa formação.",
-                    "A formação decorrerá durante a tarde do dia <b class=\"text-orange\">15 de março</b> e é restrita " +
+                    "da EBEC Aveiro 2020, onde terás a oportunidade de desenvolver as tuas capacidades numa formação.",
+                    "A formação decorrerá durante a tarde do dia <b class=\"text-orange\">12 de março</b> e é restrita " +
                     "aos participantes.",
                     "Todos os participantes do <b class=\"text-orange\">BEST Training Day</b> receberão um certificado " +
                     "de participação na formação."
@@ -78,72 +96,59 @@ $(document).ready(function () {
                 seccao4: [
                     "A EBEC Portugal é a final nacional da competição de Engenharia do BEST.",
                     "A EBEC Portugal é uma Ronda Nacional organizada por 5 Grupos Locais do BEST de norte a sul do país. " +
-                    "Na fase Nacional irão competir os vencedores das diferentes rondas locais, de 5 Universidades Portuguesas.",
-                    "Para mais informações visita o <a class='text-orange' href='http://ebecportugal.pt/' " +
-                    "target='_blank'>site</a>."
+                    "Na fase Nacional irão competir os vencedores das diferentes rondas locais, de 5 Universidades Portuguesas." +
+                    "Este ano, O <b style='color:orange'>BEST Aveiro</b> terá a honra de organizar este evento.",
+                    "Para mais informações visita o <a class='text-orange' href='http://ebecportugal.pt/'>site</a>."
                 ]
             }
         },
         edicoesAnteriores: {
             sectionHeading: "Edições Anteriores",
             videos: [
-                "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FEBEC.aveiro%2Fvideos%2F1347546375345790%2F",
-                "https://www.youtube.com/embed/osqsy-kDcU4"
+                "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FEBEC.aveiro%2Fvideos%2F403975390199860%2F",
+                "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FEBEC.aveiro%2Fvideos%2F1347546375345790%2F"
             ]
         },
         programa: {
             title: "Programa",
-            schedule: [
-                {
-                    diaSemana: "Quinta", diaMes: "14 março",
+            schedule0: {
+                    diaSemana: "Quinta", diaMes: "12 março",
                     eventos: [
                         {
-                            hora: "16:00 - 17:30",
-                            nome: "Cocktail Network",
+                            hora: "11:00 - 18:00",
+                            nome: "Feira de Empresas",
                             local: "Complexo Pedagógico, Universidade de Aveiro"
-                        }
-                    ]
-                },
-                {
-                    diaSemana: "Sexta", diaMes: "15 março",
-                    eventos: [
-                        {
-                            hora: "18:00 - 20:00",
-                            nome: "Best Training Days",
-                            local: "Complexo Pedagógico, Universidade de Aveiro"
-                        }
-                    ]
-                },
-                {
-                    diaSemana: "Sábado", diaMes: "16 março",
-                    eventos: [
-                        {hora: "09:30 - 10:30", nome: "Check-in", local: "DAO, Universidade de Aveiro"},
-                        {hora: "10:30 - 11:30", nome: "Sessão de Abertura", local: "DAO, Universidade de Aveiro"},
-                        {
-                            hora: "11:30 - 12:30",
-                            nome: "Apresentação das empresas",
-                            local: "DAO, Universidade de Aveiro"
                         },
-                        {hora: "12:30 - 13:00", nome: "Picture", local: "Meia Lua, Universidade de Aveiro"},
+                        {
+                            hora: "Horário a anunciar",
+                            nome: "Formação Complementar",
+                            local: "Complexo Pedagógico, Universidade de Aveiro"
+                        }
+                    ]
+            },
+            schedule1: {
+                    diaSemana: "Sábado", diaMes: "14 março",
+                    eventos: [
+                        {hora: "09:30 - 10:30", nome: "Check-in", local: "Universidade de Aveiro"},
+                        {hora: "10:30 - 12:30", nome: "Sessão de Abertura", local: "Universidade de Aveiro"},
+                        {hora: "12:30 - 13:00", nome: "Picture", local: "Universidade de Aveiro"},
                         {hora: "13:00 - 14:30", nome: "Almoço", local: "Refeitório do Crasto, Universidade de Aveiro"},
                         {hora: "14:30 - 00:00", nome: "Competição", local: "ESSUA, Universidade de Aveiro"}
                     ]
-                },
-                {
-                    diaSemana: "Domingo", diaMes: "17 março",
+            },
+            schedule2: {
+                    diaSemana: "Domingo", diaMes: "15 março",
                     eventos: [
-                        {hora: "00:00 - 14:30", nome: "Competição", local: "ESSUA, Universidade de Aveiro"}
+                        {hora: "00:00 - 14:30", nome: "Competição", local: "Universidade de Aveiro"}
                     ]
-                },
-                {
-                    diaSemana: "Quarta", diaMes: "20 março",
+            },
+            schedule3: {
+                    diaSemana: "Quarta", diaMes: "18 março",
                     eventos: [
-                        {hora: "13:30 - 18:00", nome: "Apresentações", local: "ESSUA, Universidade de Aveiro"},
-                        {hora: "18:00 - 19:00", nome: "Sessão de encerramento", local: "ESSUA, Universidade de Aveiro"}
+                        {hora: "13:30 - 18:00", nome: "Apresentações", local: "Universidade de Aveiro"},
+                        {hora: "18:00 - 19:00", nome: "Sessão de encerramento", local: "Universidade de Aveiro"}
                     ]
-                }
-            ]
-
+            }
         },
         apply: {
             sectionHeading: "Inscrição",
@@ -152,12 +157,12 @@ $(document).ready(function () {
                 " Leia o regulamento que se encontra <a href='assets/Regulamento.pdf' target='_blank'>aqui</a>.",
                 "Regista-te no site do BEST. Podes fazê-lo " +
                 "<a target='_blank' href='https://www.best.eu.org/account/registration.jsp'>aqui</a>.",
-                " Efetua a pré-inscrição na EBEC Aveiro 2019. Podes fazê-lo " +
+                " Efetua a pré-inscrição na EBEC Aveiro 2020. Podes fazê-lo " +
                 "<a href=\"https://www.best.eu.org/event/localDetails.jsp?event=o538j3f\" target=\"_blank\">aqui</a>.",
                 " Indica o nome da tua equipa. Todos os elementos da equipa devem indicar o mesmo nome.",
                 " Preenche os dados pedidos. Todos os campos deverão ser preenchidos, à exceção do campo \"Motivation Letter\", " +
                 "que é de preenchimento facultativo. Clica em 'Apply' para finalizares esta parte.",
-                "Já tens equipa? Então terminaste a tua pré-inscrição para a EBEC Aveiro 2019. Brevemente irás " +
+                "Já tens equipa? Então terminaste a tua pré-inscrição para a EBEC Aveiro 2020. Brevemente irás " +
                 "receber um e-mail de confirmação de inscrição com mais informação sobre o evento."
             ]
         },
@@ -167,33 +172,31 @@ $(document).ready(function () {
             testemunhos: [
                 {
                     foto: "assets/img/testimonials/1.jpg",
-                    corpo: " “Ser-se Coordenador da EBEC, é não ter um dia normal!”, isto já é uma máxima de todos os coordenadores " +
-                        "deste evento e eu não poderia concordar mais com ela. É fascinante poder coordenar uma equipa durante " +
-                        "6 meses com o intuito de organizar mais uma edição de um evento que já conta com uma década de " +
-                        "existência. O peso da responsabilidade é sem dúvida enorme, mas tudo compensa no momento em que, " +
-                        "chegado ao dia do evento, vemos o empenho e a paixão com que os participantes aderem e se envolvem " +
-                        "neste projeto",
-                    final: "João Valente<br>Coordenador da EBEC Challenge Aveiro 2018"
+                    corpo: "Como estudante de engenharia posso dizer que a EBEC é dos maiores e mais enriquecedores eventos " +
+                    "que conheço, não só para os participantes como para a organização. A ronda local da Universidade de Aveiro " +
+                    "é um exemplo perfeito da qualidade e impacto deste projeto internacional, o facto de vermos estudantes a " +
+                    "aprenderem e divertirem-se, por causa de um problema que lhes apresentamos, é o que dá ao BEST Aveiro o " +
+                    "significado para, ano após ano, continuar a fazer crescer esta competição.",
+                    final: "Pedro Gomes<br>Coordenador da EBEC Aveiro 2019"
                 },
                 {
                     foto: "assets/img/testimonials/2.jpg",
-                    corpo: " Já participei em 4 EBECs, em 2 anos consecutivos, e não " +
-                        "me canso de participar. Acho que é uma experiência fantástica, que nos obriga a pensar fora da " +
-                        "caixa, resolver desafios complicados mas interessantes, num ambiente competitivo mas amigável e " +
-                        "espetacular entre todos. Foi graças à EBEC que já fiz amigos em Universidades diferentes e conheci " +
-                        "pessoas fantásticas na minha própria universidade, criei laços mais fortes com os meus colegas " +
-                        "de equipa e aprendi imenso ao investigar e experimentar soluções para os problemas propostos. Vale, " +
-                        "sem dúvida, a pena ",
-                    final: "Francisco Power<br>Vencedor da EBEC Challenge Aveiro 2018<br>Modalidade: Team Design"
+                    corpo: "Ouvi falar pela primeira vez da competição por amigos que já tinham participado, e fiquei logo " +
+                    "entusiasmado com a ideia. Após participar a primeira vez, adorei a experiência e voltei a repetir, " + 
+                    "participando no ano seguinte. A EBEC é uma competição onde, para além de nos desafiar em termos de pensamento " +
+                    "e criatividade, e de nos “obrigar” a trabalhar em equipa, também temos a oportunidade de conhecer e interagir " +
+                    "com outros estudantes, tendo sempre a sua dose de divertimento. É uma experiência única e uma boa oportunidade " + 
+                    "para quem procura desafiar-se a si próprio.",
+                    final: "Gonçalo Antunes<br>Vencedor da EBEC Aveiro 2019<br>Modalidade: Team Design"
                 },
                 {
                     foto: "assets/img/testimonials/3.jpg",
-                    corpo: "Participar na EBEC foi uma experiência incrível, não só pela oportunidade de trabalhar em desafios " +
-                        "interessantes, mas também pelos momentos de team building proporcionados e as excelentes conexões " +
-                        "que tivemos a oportunidade de fazer. Trabalhar com os meus colegas foi incrivel! A melhor parte " +
-                        "foi a forma como crescemos enquanto equipa depois da EBEC, e acho que isso é o que a EBEC oferece " +
-                        "de mais valor ",
-                    final: "Marcelo Manteigas<br>Vencedor da EBEC Challenge Aveiro 2018<br>Modalidade: Case Study"
+                    corpo: "Participei pela primeira vez na EBEC em 2019 com a equipa 'Quem Quer Namorar com um Agricultor?'. " +
+                    "Contra todas as expectativas impostas por um nome do género, alcançámos a final europeia na qual vencemos um dos " + 
+                    "dias da competição. Todo o percurso foi uma experiência profundamente benéfica. Tanto a nível pessoal, pelas excelentes " +
+                    "pessoas que tive a oportunidade de conhecer, como a nível do desenvolvimento de competências em trabalho de equipa, " +
+                    "gestão de tempo, apresentação de ideias e consumo desmedido de cafés. Aconselho vivamente a participação. ",
+                    final: "Carlos Nicolau<br>Vencedor da EBEC Aveiro 2019<br>Modalidade: Case Study"
                 },
                 {
                     foto: "assets/img/testimonials/5.jpg",
@@ -328,24 +331,24 @@ $(document).ready(function () {
         team: {
             sectionHeading: "Equipa",
             equipa: [
-                {nome: "Pedro D. Gomes", role: "Coordenador da EBEC Aveiro 2019", foto: "assets/img/team/david.jpg"},
+                {nome: "Samuel G. Figueiredo", role: "Coordenador da EBEC Aveiro 2019", foto: "assets/img/team/david.jpg"},
                 {nome: "Ana Moura", role: "Responsável de Tópico", foto: "assets/img/team/anaMoura.jpg"},
                 {
-                    nome: "Dalila Marques",
+                    nome: "Pedro Vilares",
                     role: "Responsável de Relações Empresariais",
                     foto: "assets/img/team/dalila.jpg"
                 },
-                {nome: "Ana Rita Silva", role: "Responsável de Marketing", foto: "assets/img/team/anaRita.jpg"}
+                {nome: "Samuel Santos", role: "Responsável de Marketing", foto: "assets/img/team/anaRita.jpg"}
             ],
             equipa2: [
                 {
-                    nome: "Renan Ferreira",
+                    nome: "Alexandra Carvalho",
                     role: "Responsável de Tecnologias de Informação",
                     foto: "assets/img/team/renan.jpg"
                 },
-                {nome: "Beatriz Candeias", role: "Responsável de Logística", foto: "assets/img/team/beatriz.jpg"},
+                {nome: "Laura Silva", role: "Responsável de Logística", foto: "assets/img/team/beatriz.jpg"},
                 {nome: "Marta Santos", role: "Responsável de Participantes", foto: "assets/img/team/marta.jpg"},
-                {nome: "Luis Filipe Aguiar", role: "Responsável de Relações Públicas", foto: "assets/img/team/luis.jpg"}
+                {nome: "Inês Duarte", role: "Responsável de Relações Públicas", foto: "assets/img/team/luis.jpg"}
             ]
         },
         becomePartner: {
@@ -376,27 +379,27 @@ $(document).ready(function () {
             people: [
                 {
                     foto: "assets/img/team/david-2.jpg",
-                    nome: "Pedro D. Gomes",
+                    nome: "Samuel G. Figueiredo",
                     role: "Coordenador da EBEC Aveiro 2019",
-                    tel: "+(351) 938 097 366",
-                    email: "mailto:pedrodavid1969@gmail.com",
-                    email2: "pedrodavid1969@gmail.com"
+                    tel: "+(351) 962 042 039",
+                    email: "mailto:samuelfigueiredo2098@gmail.com",
+                    email2: " samuelfigueiredo2098@gmail.com"
                 },
                 {
                     foto: "assets/img/team/jorge.jpg",
-                    nome: "Jorge Silva",
+                    nome: "Diogo Prata",
                     role: "Presidente do BEST Aveiro",
-                    tel: "+(351) 917 077 293",
-                    email: "mailto:jorge.silva@BEST.eu.org",
-                    email2: "jorge.silva@BEST.eu.org"
+                    tel: "+(351) 925 478 764",
+                    email: "mailto:diogosprata@gmail.com",
+                    email2: " diogosprata@gmail.com"
                 },
                 {
                     foto: "assets/img/team/dalila-2.jpg",
-                    nome: "Dalila Marques",
+                    nome: "Pedro Vilares",
                     role: "Responsável de Relações Empresariais",
-                    tel: "+(351) 917 369 988",
-                    email: "mailto:dalilarakelam@gmail.com",
-                    email2: "dalilarakelam@gmail.com"
+                    tel: "+(351) 910 873 614",
+                    email: "mailto:pedrovilares98@gmail.com",
+                    email2: " pedrovilares98@gmail.com"
                 }
             ]
         },
@@ -426,7 +429,7 @@ $(document).ready(function () {
                         "3810-193 Aveiro<br/>Portugal",
                     classe: "fa-home"
                 },
-                {chave: "Telefone", valor: "+351 917 077 329", classe: "fa-phone"},
+                {chave: "Telefone", valor: "+(351) 925 478 764", classe: "fa-phone"},
                 {
                     chave: "Email",
                     valor: "<a href='mailto:aveiro@BEST.eu.org'>aveiro@BEST.eu.org</a>",

@@ -10,35 +10,35 @@ $(document).ready(function () {
                 {
                     title: "About EBEC",
                     menu: [
-                        {nome: "EBEC Aveiro", ref: "#media"},
-                        {nome: "Preview Editions", ref: '#ebecAnt'},
-                        {nome: "Program", ref: '#programa'},
-                        {nome: "Subscribing", ref: '#apply'},
-                        {nome: "Testimonials", ref: '#testemunhos'}
+                        {nome: "EBEC Aveiro", link: "#media"},
+                        {nome: "Preview Editions", link: '#ebecAnt'},
+                        {nome: "Program", link: '#programa'},
+                        {nome: "Subscribing", link: '#apply'},
+                        {nome: "Testimonials", link: '#testemunhos'}
                     ]
                 },
                 {
                     title: "More About EBEC",
                     menu: [
-                        {nome: "FAQ", ref: "#faqs"},
-                        {nome: "Jury", ref: "#juri"},
-                        {nome: "Partners", ref: "#partners"},
-                        {nome: "The Team", ref: "#equipa"},
-                        {nome: "Become Our Partner", ref: "#parceria"},
-                        {nome: "Contacts", ref: "#contactos"}]
+                        {nome: "FAQ", link: "#faqs"},
+                        /*{nome: "Jury", link: "#juri"},*/
+                        {nome: "Partners", link: "#partners"},
+                        {nome: "The Team", link: "#equipa"},
+                        {nome: "Become Our Partner", link: "#parceria"},
+                        {nome: "Contacts", link: "#contactos"}]
                 },
                 {
                     title: "The Organization",
                     menu: [
-                        {nome: "About the BEST Aveiro", ref: "#best"},
-                        {nome: "Information", ref: "#info"}]
+                        {nome: "About the BEST Aveiro", link: "#best"},
+                        {nome: "Information", link: "#info"}]
                 }
             ]
 
         },
         entrada: {
             logo: "assets/img/logos/ebec-aveiro-color.png",
-            title: "March<br> 14th, 15th, 16th, 17th and 20th"
+            title: "March<br> 12th, 14th, 15th and 20th"
         },
         ebecAveiro: {
             sectionHeading: "EBEC Aveiro",
@@ -51,18 +51,17 @@ $(document).ready(function () {
             seccoes: {
                 seccao1: {
                     ps: [
-                        "<b style=\"color:orange\">BEST Aveiro</b> has the pleasure to announce the EBEC Aveiro 2019, one " +
+                        "<b style=\"color:orange\">BEST Aveiro</b> has the pleasure to announce the EBEC Aveiro 2020, one " +
                         "of the 88 local stages of the EBEC project, with the duration of 24 hours.",
-                        " With the 9th edition happening at <b style=\"color:orange\">March of 2019</b>, the event has been " +
+                        " With the 10th edition happening at <b style=\"color:orange\">March of 2020</b>, the event has been " +
                         "counting with a bigger number of participants each year. Considered one of the most outstanding " +
                         "events of BEST Aveiro, conceptualized with an eye at the students of the University of Aveiro, " +
                         "EBEC Aveiro aims to be a moment where creativity, challenge, energy, flexibility and team spirit " +
                         "are put into practice.",
                         "In order to promote a better relationship between students and companies, the EBEC Aveiro organization " +
-                        "will promote, apart from the competition a cocktail network, on March 14th.",
+                        "will promote, apart from the competition, a job fair, on March 12th, followed by a complementary training to the participants.",
                         "By any doubt, you can check the FAQ section or contact us by our team or by our information section."
                     ],
-                    subscribe: "Subscribe now!",
                     img: "assets/img/event/ebec-aveiro.png"
                 },
                 seccao2: {
@@ -102,59 +101,50 @@ $(document).ready(function () {
         edicoesAnteriores: {
             sectionHeading: "Preview Editions",
             videos: [
-                "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FEBEC.aveiro%2Fvideos%2F1347546375345790%2F",
-                "https://www.youtube.com/embed/osqsy-kDcU4"
+                "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FEBEC.aveiro%2Fvideos%2F403975390199860%2F",
+                "https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FEBEC.aveiro%2Fvideos%2F1347546375345790%2F"
             ]
         },
         programa: {
             title: "Program",
-            schedule: [
-                {
-                    diaSemana: "Thursday", diaMes: "March 14th",
+            schedule0: {
+                    diaSemana: "Thursday", diaMes: "March 12th",
                     eventos: [
                         {
-                            hora: "16:00 - 17:30",
-                            nome: "Cocktail Network",
+                            hora: "11:00 - 18:00",
+                            nome: "Job Fair",
+                            local: "Complexo Pedagógico, University of Aveiro"
+                        },
+                        {
+                            hora: "Still to announce",
+                            nome: "Complementary Training",
                             local: "Complexo Pedagógico, University of Aveiro"
                         }
                     ]
-                },
-                {
-                    diaSemana: "Friday", diaMes: "March 15th",
+            },
+            schedule1: {
+                    diaSemana: "Saturday", diaMes: "March 14th",
                     eventos: [
-                        {
-                            hora: "18:00 - 20:00",
-                            nome: "Best Training Days",
-                            local: "Complexo Pedagógico, University of Aveiro"
-                        }
-                    ]
-                },
-                {
-                    diaSemana: "Saturday", diaMes: "March 16th",
-                    eventos: [
-                        {hora: "09:30 - 10:30", nome: "Check-in", local: "DAO, University of Aveiro"},
-                        {hora: "10:30 - 11:30", nome: "Opening Session", local: "DAO, University of Aveiro"},
-                        {hora: "11:30 - 12:30", nome: "Companies Presentations", local: "DAO, University of Aveiro"},
-                        {hora: "12:30 - 13:00", nome: "Picture", local: "Meia Lua, University of Aveiro"},
+                        {hora: "09:30 - 10:30", nome: "Check-in", local: "University of Aveiro"},
+                        {hora: "10:30 - 12:30", nome: "Opening Session", local: "University of Aveiro"},
+                        {hora: "12:30 - 13:00", nome: "Picture", local: "University of Aveiro"},
                         {hora: "13:00 - 14:30", nome: "Lunch", local: "Crasto refectory, University of Aveiro"},
                         {hora: "14:30 - 00:00", nome: "Competition", local: "ESSUA, University of Aveiro"}
                     ]
-                },
-                {
-                    diaSemana: "Sunday", diaMes: "March 17th",
+            },
+            schedule2: {
+                    diaSemana: "Sunday", diaMes: "March 15th",
                     eventos: [
                         {hora: "00:00 - 14:30", nome: "Competition", local: "ESSUA, University of Aveiro"}
                     ]
-                },
-                {
-                    diaSemana: "Wednesday", diaMes: "March 20th",
+            },
+            schedule3: {
+                    diaSemana: "Wednesday", diaMes: "March 18th",
                     eventos: [
-                        {hora: "13:30 - 18:00", nome: "Presentations", local: "ESSUA, University of Aveiro"},
-                        {hora: "18:00 - 19:00", nome: "Closing Session", local: "ESSUA, University of Aveiro"}
+                        {hora: "13:30 - 18:00", nome: "Presentations", local: "University of Aveiro"},
+                        {hora: "18:00 - 19:00", nome: "Closing Session", local: "University of Aveiro"}
                     ]
-                }
-            ]
-
+            }
         },
         apply: {
             sectionHeading: "Subscribing",
@@ -163,12 +153,12 @@ $(document).ready(function () {
                 " Read the regulament that can be found <a href=\"../Regulamento.pdf\" target=\"_blank\">here</a>.",
                 " Sign up on BEST Website. You can do it " +
                 "<a href=\"https://www.best.eu.org/account/registration.jsp\" target=\"_blank\">here</a>.",
-                " Do a pre-registration on EBEC Aveiro 2019. You can do it " +
+                " Do a pre-registration on EBEC Aveiro 2020. You can do it " +
                 "<a href=\"https://www.best.eu.org/event/localDetails.jsp?event=o538j3f\" target=\"_blank\">here</a>.",
                 " Write the name of your team. All the members of the team have to write the same name.",
                 " Fill all the fields, with exception of 'Motivation Letter', which it's optional. Click on 'Apply' to finish " +
                 "this part.",
-                "Already have a team? So you finish your pre-registration to EBEC Aveiro 2018. Soon you will receive an " +
+                "Already have a team? So you finish your pre-registration to EBEC Aveiro 2020. Soon you will receive an " +
                 "email with confirmation of registration and more information about the event."
             ]
         },
@@ -178,14 +168,12 @@ $(document).ready(function () {
             testemunhos: [
                 {
                     foto: "assets/img/testimonials/1.jpg",
-                    corpo: "'Being EBEC's coordinator, is not having a normal day!', that is already a maximum to everyone " +
-                        "of all the coordinators of this event and I couldn't agree more with that." +
-                        "<br>It is fascinating being able to coordinate a team during 6 months with the aim to organize " +
-                        "one more edition of an event that counts with more than a decade of existence." +
-                        "<br>The weight of responsibility is, with no doubt, enormous, but everything compensates at the " +
-                        "moment which, arrived the day of the event, we see the effort and passion that the participants " +
-                        "adhere and involve themselves at the project.",
-                    final: "João Valente<br>Coordinator of EBEC Challenge Aveiro 2018"
+                    corpo: "As an engineering student I can say that EBEC is one of the greatest and most enriching events I know, " +
+                    "not only for the participants but also for the organization. The local round of the University of Aveiro is a " +
+                    "perfect example of the quality and impact of this international project, the fact that we see students learning " +
+                    "and having fun, because of a problem that we presented to them, is what gives to BEST Aveiro the meaning for, year " +
+                    "after year, to continue to grow this competition.",
+                    final: "Pedro Gomes<br>Coordinator of EBEC Aveiro 2019"
                 },
                 {
                     foto: "assets/img/testimonials/2.jpg",
@@ -195,7 +183,7 @@ $(document).ready(function () {
                         "It was thanks to EBEC that I have made friends in different universities and met fantastic people " +
                         "at my own university, created stronger bonds with my team's colleagues and learned a lot about " +
                         "investigate and try solutions to the given problems. It is worth, with no doubt",
-                    final: "Francisco Power<br>Winner of EBEC Challenge Aveiro 2018<br>Modality: Team Design"
+                    final: "Gonçalo Antunes<br>Winner of EBEC Aveiro 2019<br>Modality: Team Design"
                 },
                 {
                     foto: "assets/img/testimonials/3.jpg",
@@ -203,7 +191,7 @@ $(document).ready(function () {
                         "interesting challenges, but for the offered team building's moments and the excellent connections " +
                         "we could do too. Work with my colleagues was incredible! The best part was the way we have grown " +
                         "as a team after EBEC, and i think that was the most valuable thing that the competition could offer",
-                    final: "Marcelo Manteigas<br>Winner of EBEC Challenge Aveiro 2018<br>Modality: Case Study"
+                    final: "Carlos Nicolau<br>Winner of EBEC Aveiro 2019<br>Modality: Case Study"
                 },
                 {
                     foto: "assets/img/testimonials/5.jpg",
@@ -339,16 +327,16 @@ $(document).ready(function () {
         team: {
             sectionHeading: "The Team",
             equipa: [
-                {nome: "Pedro D. Gomes", role: "Coordinator of EBEC Aveiro 2019", foto: "assets/img/team/david.jpg"},
-                {nome: "Ana Moura", role: "Topic Responsible", foto: "assets/img/team/anaMoura.jpg"},
-                {nome: "Dalila Marques", role: "Corporate Relations Responsible", foto: "assets/img/team/dalila.jpg"},
-                {nome: "Ana Rita Silva", role: "Marketing Responsible", foto: "assets/img/team/anaRita.jpg"}
+                {nome: "Samuel G. Figueiredo", role: "Coordinator of EBEC Aveiro 2019", foto: "assets/img/team/david.jpg"},
+                {nome: "Joana Batista", role: "Topic Responsible", foto: "assets/img/team/anaMoura.jpg"},
+                {nome: "Pedro Vilares", role: "Corporate Relations Responsible", foto: "assets/img/team/dalila.jpg"},
+                {nome: "Samuel Santos", role: "Marketing Responsible", foto: "assets/img/team/anaRita.jpg"}
             ],
             equipa2: [
-                {nome: "Renan Ferreira", role: "Information Tecnology Responsible", foto: "assets/img/team/renan.jpg"},
-                {nome: "Beatriz Candeias", role: "Logistic Responsible", foto: "assets/img/team/beatriz.jpg"},
+                {nome: "Alexandra Carvalho", role: "Information Tecnology Responsible", foto: "assets/img/team/renan.jpg"},
+                {nome: "Laura Silva", role: "Logistic Responsible", foto: "assets/img/team/beatriz.jpg"},
                 {nome: "Marta Santos", role: "Participants Responsible", foto: "assets/img/team/marta.jpg"},
-                {nome: "Luis Filipe Aguiar", role: "Public Relations Responsible", foto: "assets/img/team/luis.jpg"}
+                {nome: "Inês Duarte", role: "Public Relations Responsible", foto: "assets/img/team/luis.jpg"}
             ]
         },
         becomePartner: {
@@ -382,26 +370,26 @@ $(document).ready(function () {
                 {
                     foto: "assets/img/team/david-2.jpg",
                     nome: "Pedro D. Gomes",
-                    role: "Coordinator of EBEC Aveiro 2019",
-                    tel: "+(351) 938 097 366",
-                    email: "mailto:pedrodavid1969@gmail.com",
-                    email2: "pedrodavid1969@gmail.com"
+                    role: "Coordinator of EBEC Aveiro 2020",
+                    tel: "+(351) 962 042 039",
+                    email: "m ailto:samuelfigueiredo2098@gmail.com",
+                    email2: "samuelfigueiredo2098@gmail.com"
                 },
                 {
                     foto: "assets/img/team/jorge.jpg",
-                    nome: "Jorge Silva",
+                    nome: "Diogo Prata",
                     role: "President of BEST Aveiro",
-                    tel: "+(351) 917 077 293",
-                    email: "mailto:jorge.silva@BEST.eu.org",
-                    email2: "jorge.silva@BEST.eu.org"
+                    tel: "+(351) 925 478 764",
+                    email: "mailto:diogosprata@gmail.com",
+                    email2: " diogosprata@gmail.com"
                 },
                 {
                     foto: "assets/img/team/dalila-2.jpg",
-                    nome: "Dalila Marques",
+                    nome: "Pedro Vilares",
                     role: "Corporate Relations Responsible",
-                    tel: "+(351) 917 369 988",
-                    email: "mailto:dalilarakelam@gmail.com",
-                    email2: "dalilarakelam@gmail.com"
+                    tel: "+(351) 910 873 614",
+                    email: "mailto:pedrovilares98@gmail.com",
+                    email2: " pedrovilares98@gmail.com"
                 }
             ]
         },
