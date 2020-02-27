@@ -55,15 +55,14 @@ $(document).ready(function () {
                     ps: [
                         "É com prazer que o <b style='color:orange'>BEST Aveiro</b> organiza anualmente " +
                         "uma das 88 fases locais do projeto EBEC.",
-                        "Com a décima edição da competição a ocorrer em <b style='color:orange'>março de 2020</b>, evento que tem vindo a contar com um" +
-                        "grande número de participantes em todas as edições, consideramo-lo um dos eventos de maior destaque" +
-                        "do BEST Aveiro. Direcionado aos alunos da Universidade de Aveiro, a EBEC Aveiro pretende ser um" +
+                        "Com a décima edição da competição a ocorrer em <b style='color:orange'>março de 2020</b>, evento que tem vindo a contar com um " +
+                        "grande número de participantes em todas as edições, consideramo-lo um dos eventos de maior destaque " +
+                        "do BEST Aveiro. Direcionado aos alunos da Universidade de Aveiro, a EBEC Aveiro pretende ser um " +
                         "momento onde criatividade, desafio, energia, flexibilidade e espírito de equipa são postos em prática.",
-                        "No sentido de promover uma melhor relação entre estudantes e empresas, a EBEC Aveiro organizará," +
-                        "à parte da competição, uma <span style='color:orange'>feira de empresas</span> juntamente" +
+                        "No sentido de promover uma melhor relação entre estudantes e empresas, a EBEC Aveiro organizará, " +
+                        "à parte da competição, uma <span style='color:orange'>feira de empresas</span> juntamente " +
                         "com uma formação complementar para os nossos participants, que irão ocorrer no dia 12 de março.",
-                        "Para qualquer dúvida, podes-se informar na secção FAQ ou nos contactar por meio da nossa equipa" +
-                        "ou por meios da secção de informações."
+                        "Para qualquer dúvida, podes-se informar melhor na secção FAQ ou contactar diretamente um de nossos membros ou pelo contacto da associação. "
                     ],
                     img: "assets/img/event/ebec-aveiro.png"
                 },
@@ -97,7 +96,7 @@ $(document).ready(function () {
                     "A EBEC Portugal é a final nacional da competição de Engenharia do BEST.",
                     "A EBEC Portugal é uma Ronda Nacional organizada por 5 Grupos Locais do BEST de norte a sul do país. " +
                     "Na fase Nacional irão competir os vencedores das diferentes rondas locais, de 5 Universidades Portuguesas." +
-                    "Este ano, O <b style='color:orange'>BEST Aveiro</b> terá a honra de organizar este evento.",
+                    "Este ano, O <b style='color:orange'>BEST Aveiro</b> terá a honra de sediar este evento.",
                     "Para mais informações visita o <a class='text-orange' href='http://ebecportugal.pt/'>site</a>."
                 ]
             }
@@ -154,7 +153,7 @@ $(document).ready(function () {
             sectionHeading: "Inscrição",
             sectionSubheading: "Para te inscreveres só precisas de efetuar os seguintes passos:",
             corpo: [
-                " Leia o regulamento que se encontra <a href='assets/Regulamento.pdf' target='_blank'>aqui</a>.",
+                /*" Leia o regulamento que se encontra <a href='assets/Regulamento.pdf' target='_blank'>aqui</a>.",*/
                 "Regista-te no site do BEST. Podes fazê-lo " +
                 "<a target='_blank' href='https://www.best.eu.org/account/registration.jsp'>aqui</a>.",
                 " Efetua a pré-inscrição na EBEC Aveiro 2020. Podes fazê-lo " +
@@ -238,7 +237,7 @@ $(document).ready(function () {
                     p: "Quando tempo dura a competição?",
                     r: "Tens 24 horas para construir o teu protótipo, caso participes no <i>Team Design</i>, ou arranjar uma " +
                         "solução para o problema de <i>Case Study</i>. A apresentação do teu projeto será apenas na quarta-feira " +
-                        "seguinte(20 de março)."
+                        "seguinte(18 de março)."
                 },
                 {
                     p: "Há quantos membros por equipa?",
@@ -325,31 +324,27 @@ $(document).ready(function () {
         },
         partners: {
             sectionHeading: "Parceiros",
-            sectionSubHeading: "Parceiros de Mídia",
-            sectionSubHeading2: "Parceiros Promo"
+            sectionSubHeading: "Parceiros Bronze",
         },
         team: {
             sectionHeading: "Equipa",
-            equipa: [
-                {nome: "Samuel G. Figueiredo", role: "Coordenador da EBEC Aveiro 2019", foto: "assets/img/team/david.jpg"},
-                {nome: "Ana Moura", role: "Responsável de Tópico", foto: "assets/img/team/anaMoura.jpg"},
-                {
+            equipa: {
+                MO:{nome: "Samuel G. Figueiredo", role: "Coordenador da EBEC Aveiro 2019" },
+                TP:{nome: "Joana Batista", role: "Responsável de Tópico" },
+                CR:{
                     nome: "Pedro Vilares",
-                    role: "Responsável de Relações Empresariais",
-                    foto: "assets/img/team/dalila.jpg"
+                    role: "Responsável de Relações Empresariais"
                 },
-                {nome: "Samuel Santos", role: "Responsável de Marketing", foto: "assets/img/team/anaRita.jpg"}
-            ],
-            equipa2: [
-                {
+                MKT:{nome: "Samuel Santos", role: "Responsável de Marketing"}
+            },
+            equipa2: {
+                IT:{
                     nome: "Alexandra Carvalho",
-                    role: "Responsável de Tecnologias de Informação",
-                    foto: "assets/img/team/renan.jpg"
+                    role: "Responsável de Tecnologias de Informação"
                 },
-                {nome: "Laura Silva", role: "Responsável de Logística", foto: "assets/img/team/beatriz.jpg"},
-                {nome: "Marta Santos", role: "Responsável de Participantes", foto: "assets/img/team/marta.jpg"},
-                {nome: "Inês Duarte", role: "Responsável de Relações Públicas", foto: "assets/img/team/luis.jpg"}
-            ]
+                LOG:{nome: "Laura Silva", role: "Responsável de Logística"},
+                PAX:{nome: "Mariana Rodrigues", role: "Responsável de Participantes"}
+            }
         },
         becomePartner: {
             sectionHeading: "Torne-se Nosso parceiro",
@@ -369,39 +364,36 @@ $(document).ready(function () {
                 "uma intensa partilha de conhecimentos.",
                 "A sua empresa aumentará ainda a visibilidade entre os estudantes da Universidade de Aveiro, conhecidos " +
                 "pelo seu dinamismo, inovação e empreendedorismo, através de promoção disponibilizada pelo BEST Aveiro.",
-                "Caso esteja interessado em ser nosso parceiro, contacte-nos por meio dos " +
-                "<a style=\"color: #428BFF\" href=\"#contactos\">Contactos</a> da equipa ou por meio das " +
-                "<a style=\"color: #428BFF\" href=\"#info\">Informações</a> do Best Aveiro."
+                "Caso esteja interessado em ser nosso parceiro, contacte diretamente nossos " +
+                "<a style=\"color: #428BFF\" href=\"#contactos\">membros</a> ou através do contacto da " +
+                "<a style=\"color: #428BFF\" href=\"#info\">associação</a>."
             ]
         },
         contacts: {
             sectionHeading: "Contactos",
-            people: [
-                {
-                    foto: "assets/img/team/david-2.jpg",
+            people: {
+                MO: {
                     nome: "Samuel G. Figueiredo",
                     role: "Coordenador da EBEC Aveiro 2019",
                     tel: "+(351) 962 042 039",
                     email: "mailto:samuelfigueiredo2098@gmail.com",
                     email2: " samuelfigueiredo2098@gmail.com"
                 },
-                {
-                    foto: "assets/img/team/jorge.jpg",
+                presi: {
                     nome: "Diogo Prata",
                     role: "Presidente do BEST Aveiro",
                     tel: "+(351) 925 478 764",
                     email: "mailto:diogosprata@gmail.com",
                     email2: " diogosprata@gmail.com"
                 },
-                {
-                    foto: "assets/img/team/dalila-2.jpg",
+                cr: {
                     nome: "Pedro Vilares",
                     role: "Responsável de Relações Empresariais",
                     tel: "+(351) 910 873 614",
                     email: "mailto:pedrovilares98@gmail.com",
                     email2: " pedrovilares98@gmail.com"
                 }
-            ]
+            }
         },
         bestAveiro: {
             img: "assets/img/logos/best-aveiro-color.png",
@@ -421,7 +413,7 @@ $(document).ready(function () {
             ]
         },
         info: {
-            mapa: "https://www.google.com/maps/embed/v1/place?key=AIzaSyCMIUqakqzpEZx05JpVA7GaNhcpkfwyAyg&q=BEST Aveiro, Aveiro, PT",
+            mapa: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.9809366135064!2d-8.659694684735314!3d40.630302379340826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd23a2aa4e1bda2b%3A0xd70b976749475485!2sUniversidade+de+Aveiro!5e0!3m2!1spt-PT!2spt!4v1561662996255!5m2!1spt-PT!2spt",
             infos: [
                 {
                     chave: "Morada",

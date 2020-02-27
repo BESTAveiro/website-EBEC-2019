@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .tabs input[name="tab-control"] {
   display: none;
 }
@@ -533,7 +537,7 @@ body{
   background-position:center center;
   background-repeat:no-repeat;
   background-size:cover;
-  background-image: url('../img/event/main-background.jpg');
+  background-image: url('../img/event/main-3.jpg');
   background-attachment: fixed;
 }
 

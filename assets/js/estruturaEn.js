@@ -60,7 +60,7 @@ $(document).ready(function () {
                         "are put into practice.",
                         "In order to promote a better relationship between students and companies, the EBEC Aveiro organization " +
                         "will promote, apart from the competition, a job fair, on March 12th, followed by a complementary training to the participants.",
-                        "By any doubt, you can check the FAQ section or contact us by our team or by our information section."
+                        "By any doubt, you can check the FAQ section or contact directly one of our members or through the contact of our organization."
                     ],
                     img: "assets/img/event/ebec-aveiro.png"
                 },
@@ -92,7 +92,8 @@ $(document).ready(function () {
                 seccao4: [
                     "The EBEC Portugal is the national final competition of engineering of BEST.",
                     "The EBEC Portugal is a National Round organized by 5 Local Groups of BEST from north to south of the " +
-                    "country, where the winners of the local EBECs will compete against each other.",
+                    "country, where the winners of the local EBECs will compete against each other. " +
+                    "This year, BEST Aveiro has the honor to host this event.",
                     "For more informations, visit the <a class=\"text-orange\" href=\"http://ebecportugal.pt/\" " +
                     "target=\"_blank\">site</a>."
                 ]
@@ -150,7 +151,7 @@ $(document).ready(function () {
             sectionHeading: "Subscribing",
             sectionSubheading: "To apply you only need to follow this steps:",
             corpo: [
-                " Read the regulament that can be found <a href=\"../Regulamento.pdf\" target=\"_blank\">here</a>.",
+                /*" Read the regulament that can be found <a href=\"../Regulamento.pdf\" target=\"_blank\">here</a>.", */
                 " Sign up on BEST Website. You can do it " +
                 "<a href=\"https://www.best.eu.org/account/registration.jsp\" target=\"_blank\">here</a>.",
                 " Do a pre-registration on EBEC Aveiro 2020. You can do it " +
@@ -177,20 +178,20 @@ $(document).ready(function () {
                 },
                 {
                     foto: "assets/img/testimonials/2.jpg",
-                    corpo: " I already participate in 4 EBECs, in 2 consecutive years, and I can't get tired to participate. " +
-                        "I believe it is a fantastic experience, that force us to think out of the box, solve difficult " +
-                        "but interesting challenges, in a competitive environment but friendly and spectacular between all. " +
-                        "It was thanks to EBEC that I have made friends in different universities and met fantastic people " +
-                        "at my own university, created stronger bonds with my team's colleagues and learned a lot about " +
-                        "investigate and try solutions to the given problems. It is worth, with no doubt",
+                    corpo: "I first heard about the competition from friends who had already participated, and I was immediately excited " +
+                    "by the idea. After participating the first time, I loved the experience and went back to participating in the following " +
+                    "year. EBEC is a competition where, in addition to challenging us in terms of thinking and creativity, and “forcing” us to " +
+                    "work as a team, we also have the opportunity to meet and interact with other students, always having their dose of fun. It " +
+                    "is a unique experience and a good opportunity for those looking to challenge themselves.",
                     final: "Gonçalo Antunes<br>Winner of EBEC Aveiro 2019<br>Modality: Team Design"
                 },
                 {
                     foto: "assets/img/testimonials/3.jpg",
-                    corpo: " Participate in the EBEC was an amazing experience, not only for the opportunity to work in " +
-                        "interesting challenges, but for the offered team building's moments and the excellent connections " +
-                        "we could do too. Work with my colleagues was incredible! The best part was the way we have grown " +
-                        "as a team after EBEC, and i think that was the most valuable thing that the competition could offer",
+                    corpo: " I participated for the first time in EBEC in 2019 with the team 'Who Wants to Flirt with a Farmer?'. Against all " +
+                    "expectations imposed by a name like that, we reached the European final in which we won one of the days of the competition. " +
+                    "The whole journey was a profoundly beneficial experience. Both personally, due to the excellent people I had the opportunity to " +
+                    "meet, as well as the development of skills in teamwork, time management, presentation of ideas and excessive consumption of " +
+                    "coffees. I strongly advise participation.",
                     final: "Carlos Nicolau<br>Winner of EBEC Aveiro 2019<br>Modality: Case Study"
                 },
                 {
@@ -233,7 +234,7 @@ $(document).ready(function () {
                 {
                     p: "How long does the competition last?",
                     r: "You have 24 hours to build your prototype or get a solution for your <i>Case Study</i>. " +
-                        "The presentation of your project will be on the next wednesday (march 20th)."
+                        "The presentation of your project will be on the next wednesday (march 18th)."
                 },
                 {
                     p: "How many members are there per team?",
@@ -321,23 +322,21 @@ $(document).ready(function () {
         },
         partners: {
             sectionHeading: "Partners",
-            sectionSubHeading: "Media Partners",
-            sectionSubHeading2: "promo Partners"
+            sectionSubHeading: "Bronze Partners",
         },
         team: {
             sectionHeading: "The Team",
-            equipa: [
-                {nome: "Samuel G. Figueiredo", role: "Coordinator of EBEC Aveiro 2019", foto: "assets/img/team/david.jpg"},
-                {nome: "Joana Batista", role: "Topic Responsible", foto: "assets/img/team/anaMoura.jpg"},
-                {nome: "Pedro Vilares", role: "Corporate Relations Responsible", foto: "assets/img/team/dalila.jpg"},
-                {nome: "Samuel Santos", role: "Marketing Responsible", foto: "assets/img/team/anaRita.jpg"}
-            ],
-            equipa2: [
-                {nome: "Alexandra Carvalho", role: "Information Tecnology Responsible", foto: "assets/img/team/renan.jpg"},
-                {nome: "Laura Silva", role: "Logistic Responsible", foto: "assets/img/team/beatriz.jpg"},
-                {nome: "Marta Santos", role: "Participants Responsible", foto: "assets/img/team/marta.jpg"},
-                {nome: "Inês Duarte", role: "Public Relations Responsible", foto: "assets/img/team/luis.jpg"}
-            ]
+            equipa: {
+                MO:{nome: "Samuel G. Figueiredo", role: "Coordinator of EBEC Aveiro 2019"},
+                TP:{nome: "Joana Batista", role: "Topic Responsible"},
+                CR:{nome: "Pedro Vilares", role: "Corporate Relations Responsible"},
+                MKT:{nome: "Samuel Santos", role: "Marketing Responsible"}
+            },
+            equipa2: {
+                IT:{nome: "Alexandra Carvalho", role: "Information Tecnology Responsible"},
+                LOG:{nome: "Laura Silva", role: "Logistic Responsible"},
+                PAX:{nome: "Mariana Rodrigues", role: "Participants Responsible"}
+            }
         },
         becomePartner: {
             sectionHeading: "Become Our Partner",
@@ -359,39 +358,35 @@ $(document).ready(function () {
                 "sharing.",
                 "Your company will increase its visibility between the students of the University of Aveiro, known by their " +
                 "dynamism, innovation, and entrepreneurship, through the promotion available by BEST Aveiro.",
-                "If you are interesting in being our partner, contact us through our team's <a class=\"text-blue-light\" " +
-                "href=\"#contactos\">Contacts</a> or by the <a class=\"text-blue-light\" href=\"#info\">Information</a> " +
-                "of BEST Aveiro."
+                "If you are interesting in being our partner, contact directy our <a class=\"text-blue-light\" " +
+                "href=\"#contactos\">members</a> or through the contact of the <a class=\"text-blue-light\" href=\"#info\">association</a>. "
             ]
         },
         contacts: {
-            sectionHeading: "Contacts",
-            people: [
-                {
-                    foto: "assets/img/team/david-2.jpg",
-                    nome: "Pedro D. Gomes",
+            sectionHeading: "Contactos",
+            people: {
+                MO: {
+                    nome: "Samuel G. Figueiredo",
                     role: "Coordinator of EBEC Aveiro 2020",
                     tel: "+(351) 962 042 039",
                     email: "m ailto:samuelfigueiredo2098@gmail.com",
                     email2: "samuelfigueiredo2098@gmail.com"
                 },
-                {
-                    foto: "assets/img/team/jorge.jpg",
+                presi: {
                     nome: "Diogo Prata",
                     role: "President of BEST Aveiro",
                     tel: "+(351) 925 478 764",
                     email: "mailto:diogosprata@gmail.com",
                     email2: " diogosprata@gmail.com"
                 },
-                {
-                    foto: "assets/img/team/dalila-2.jpg",
+                cr: {
                     nome: "Pedro Vilares",
                     role: "Corporate Relations Responsible",
                     tel: "+(351) 910 873 614",
                     email: "mailto:pedrovilares98@gmail.com",
                     email2: " pedrovilares98@gmail.com"
                 }
-            ]
+            }
         },
         bestAveiro: {
             img: "assets/img/logos/best-aveiro-color.png",
@@ -411,7 +406,7 @@ $(document).ready(function () {
             ]
         },
         info: {
-            mapa: "https://www.google.com/maps/embed/v1/place?key=AIzaSyCMIUqakqzpEZx05JpVA7GaNhcpkfwyAyg&q=BEST Aveiro, Aveiro, PT",
+            mapa: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.9809366135064!2d-8.659694684735314!3d40.630302379340826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd23a2aa4e1bda2b%3A0xd70b976749475485!2sUniversidade+de+Aveiro!5e0!3m2!1spt-PT!2spt!4v1561662996255!5m2!1spt-PT!2spt",
             infos: [
                 {
                     chave: "Address",
