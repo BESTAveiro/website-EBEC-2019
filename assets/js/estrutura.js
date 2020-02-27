@@ -154,7 +154,7 @@ $(document).ready(function () {
             sectionSubheading: "Para te inscreveres só precisas de efetuar os seguintes passos:",
             corpo: [
                 " Leia o regulamento que se encontra <a href='assets/Regulamento.pdf' target='_blank'>aqui</a>.",
-                "Efetua a tua inscrição <a target='_blank' href='https://docs.google.com/forms/d/e/1FAIpQLSfQgBWjzjrGFyrmDBls5tbtn-gmQzKGUkOjhV2aOoPDtd4tJA/viewform'>aqui</a>.",
+                "Efetua a tua inscrição por este <a target='_blank' href='https://docs.google.com/forms/d/e/1FAIpQLSfQgBWjzjrGFyrmDBls5tbtn-gmQzKGUkOjhV2aOoPDtd4tJA/viewform'>formulário</a>.",
                 /*"Regista-te no site do BEST. Podes fazê-lo " +
                 "<a target='_blank' href='https://www.best.eu.org/account/registration.jsp'>aqui</a>.",
                 " Efetua a pré-inscrição na EBEC Aveiro 2020. Podes fazê-lo " +

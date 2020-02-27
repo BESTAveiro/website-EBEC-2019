@@ -151,15 +151,16 @@ $(document).ready(function () {
             sectionHeading: "Subscribing",
             sectionSubheading: "To apply you only need to follow this steps:",
             corpo: [
-                /*" Read the regulament that can be found <a href=\"../Regulamento.pdf\" target=\"_blank\">here</a>.", */
-                " Sign up on BEST Website. You can do it " +
+                " Read the regulament that can be found <a href=\"../Regulamento.pdf\" target=\"_blank\">here</a>.", 
+                " Sign up through this <a target='_blank' href='https://docs.google.com/forms/d/e/1FAIpQLSfQgBWjzjrGFyrmDBls5tbtn-gmQzKGUkOjhV2aOoPDtd4tJA/viewform'>form</a>."
+                /*" Sign up on BEST Website. You can do it " +
                 "<a href=\"https://www.best.eu.org/account/registration.jsp\" target=\"_blank\">here</a>.",
                 " Do a pre-registration on EBEC Aveiro 2020. You can do it " +
-                "<a href=\"https://www.best.eu.org/event/localDetails.jsp?event=o538j3f\" target=\"_blank\">here</a>.",
+                "<a href=\"https://www.best.eu.org/event/localDetails.jsp?event=o538j3f\" target=\"_blank\">here</a>.",*/
                 " Write the name of your team. All the members of the team have to write the same name.",
-                " Fill all the fields, with exception of 'Motivation Letter', which it's optional. Click on 'Apply' to finish " +
-                "this part.",
-                "Already have a team? So you finish your pre-registration to EBEC Aveiro 2020. Soon you will receive an " +
+                " Fill all the fields.", /*with exception of 'Motivation Letter', which it's optional. Click on 'Apply' to finish " +
+                "this part.",*/
+                " Already have a team? So you finished your pre-registration to EBEC Aveiro 2020. Soon you will receive an " +
                 "email with confirmation of registration and more information about the event."
             ]
         },
