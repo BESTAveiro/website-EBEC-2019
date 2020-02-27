@@ -152,7 +152,7 @@ $(document).ready(function () {
             sectionSubheading: "To apply you only need to follow this steps:",
             corpo: [
                 " Read the regulament that can be found <a href=\"../Regulamento.pdf\" target=\"_blank\">here</a>.", 
-                " Sign up through this <a target='_blank' href='https://docs.google.com/forms/d/e/1FAIpQLSfQgBWjzjrGFyrmDBls5tbtn-gmQzKGUkOjhV2aOoPDtd4tJA/viewform'>form</a>."
+                " Sign up through this <a target='_blank' href='https://docs.google.com/forms/d/e/1FAIpQLSfQgBWjzjrGFyrmDBls5tbtn-gmQzKGUkOjhV2aOoPDtd4tJA/viewform'>form</a>.",
                 /*" Sign up on BEST Website. You can do it " +
                 "<a href=\"https://www.best.eu.org/account/registration.jsp\" target=\"_blank\">here</a>.",
                 " Do a pre-registration on EBEC Aveiro 2020. You can do it " +
@@ -324,6 +324,7 @@ $(document).ready(function () {
         partners: {
             sectionHeading: "Partners",
             sectionSubHeading: "Bronze Partners",
+            sectionSubHeading2: "Silver Partners",
         },
         team: {
             sectionHeading: "The Team",

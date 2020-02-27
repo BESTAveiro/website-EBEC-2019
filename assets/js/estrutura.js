@@ -160,7 +160,7 @@ $(document).ready(function () {
                 " Efetua a pré-inscrição na EBEC Aveiro 2020. Podes fazê-lo " +
                 "<a href=\"https://www.best.eu.org/event/localDetails.jsp?event=o538j3f\" target=\"_blank\">aqui</a>.",*/
                 " Indica o nome da tua equipa. Todos os elementos da equipa devem indicar o mesmo nome.",
-                " Preenche os dados pedidos. Todos os campos deverão ser preenchidos."/*, à exceção do campo \"Motivation Letter\", " +
+                " Preenche os dados pedidos. Todos os campos deverão ser preenchidos.",/*, à exceção do campo \"Motivation Letter\", " +
                 "que é de preenchimento facultativo.* Clica em 'Apply' para finalizares esta parte.",*/
                 "Já tens equipa? Então terminaste a tua pré-inscrição para a EBEC Aveiro 2020. Brevemente irás " +
                 "receber um e-mail de confirmação de inscrição com mais informação sobre o evento."
@@ -326,6 +326,7 @@ $(document).ready(function () {
         partners: {
             sectionHeading: "Parceiros",
             sectionSubHeading: "Parceiros Bronze",
+            sectionSubHeading2: "Parceiros Silver",
         },
         team: {
             sectionHeading: "Equipa",
