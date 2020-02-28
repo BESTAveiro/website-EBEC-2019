@@ -66,7 +66,7 @@ $(document).ready(function () {
                         "No sentido de promover uma melhor relação entre estudantes e empresas, a EBEC Aveiro organizará, " +
                         "à parte da competição, uma <span style='color:orange'>feira de empresas</span> juntamente " +
                         "com uma formação complementar para os nossos participants, que irão ocorrer no dia 12 de março.",
-                        "Para qualquer dúvida, podes-se informar melhor na secção FAQ ou contactar diretamente um de nossos membros ou pelo contacto da associação. "
+                        "Para qualquer dúvida, podes-te informar melhor na secção FAQ ou contactar diretamente um dos nossos membros ou pelo contacto da associação. "
                     ],
                     img: "assets/img/event/ebec-aveiro.png"
                 },
