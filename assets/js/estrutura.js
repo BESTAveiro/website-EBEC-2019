@@ -13,8 +13,10 @@ $(document).ready(function () {
                         {nome: "EBEC Aveiro", link: "#ebec"},
                         {nome: "Edições Anteriores", link: "#ebecAnt"}, 
                         {nome: "Programa",link: "#programa" }, 
-                        {nome:"Inscrição",link: "#apply"}, 
-                        {nome:"Testemunhos", link:"#testemunhos"}
+                        {nome:"Inscrição",link: "#apply"},
+                        /*
+                                                {nome:"Testemunhos", link:"#testemunhos"}
+                        */
                     ]
                 },
                 {
@@ -47,7 +49,9 @@ $(document).ready(function () {
             icones: [
                 {title: "Ronda Local", classe: "fa-map-pin"},
                 {title: "Modalidades", classe: "fa-tools"},
-                {title: "Formação", classe: "fa-chalkboard-teacher"},
+                /*
+                                {title: "Formação", classe: "fa-chalkboard-teacher"},
+                */
                 {title: "Ronda Nacional", classe: "fa-award"},
             ],
             seccoes: {
@@ -154,7 +158,7 @@ $(document).ready(function () {
             sectionSubheading: "Para te inscreveres só precisas de efetuar os seguintes passos:",
             corpo: [
                 " Leia o regulamento que se encontra <a href='assets/Regulamento.pdf' target='_blank'>aqui</a>.",
-                "Efetua a tua inscrição por este <a target='_blank' href='https://docs.google.com/forms/d/e/1FAIpQLSfQgBWjzjrGFyrmDBls5tbtn-gmQzKGUkOjhV2aOoPDtd4tJA/viewform'>formulário</a>.",
+                "Efetua a tua inscrição a partir desta <a target='_blank' href='https://www.best.eu.org/event/localDetails.jsp?event=o538jqi&fbclid=IwAR3YVlMmhDv3fughYlUgQPMKH3UPoZUpQgKrtmuWPR9Y1ehi5JgPXj54lW0'>página</a>.",
                 /*"Regista-te no site do BEST. Podes fazê-lo " +
                 "<a target='_blank' href='https://www.best.eu.org/account/registration.jsp'>aqui</a>.",
                 " Efetua a pré-inscrição na EBEC Aveiro 2020. Podes fazê-lo " +
@@ -331,7 +335,7 @@ $(document).ready(function () {
         team: {
             sectionHeading: "Equipa",
             equipa: {
-                MO:{nome: "Samuel G. Figueiredo", role: "Coordenador da EBEC Aveiro 2019" },
+                MO: {nome: "Samuel G. Figueiredo", role: "Coordenador da EBEC Aveiro 2020"},
                 TP:{nome: "Joana Batista", role: "Responsável de Tópico" },
                 CR:{
                     nome: "Pedro Vilares",
@@ -351,7 +355,7 @@ $(document).ready(function () {
         becomePartner: {
             sectionHeading: "Torne-se Nosso parceiro",
             corpo: [
-                "Ao tornar-se nosso parceiro, a sua empresa estará integrada na organização da EBEC Aveiro 2019, com uma " +
+                "Ao tornar-se nosso parceiro, a sua empresa estará integrada na organização da EBEC Aveiro 2020, com uma " +
                 "equipa dinâmica e empenhada em satisfazer as necessidades de desenvolvimento extracurricular dos estudantes, " +
                 "bem como os interesses da sua empresa. Terá a oportunidade de participar numa feira de empresas e num " +
                 "cocktail network.",
@@ -376,7 +380,7 @@ $(document).ready(function () {
             people: {
                 MO: {
                     nome: "Samuel G. Figueiredo",
-                    role: "Coordenador da EBEC Aveiro 2019",
+                    role: "Coordenador da EBEC Aveiro 2020",
                     tel: "+(351) 962 042 039",
                     email: "mailto:samuelfigueiredo2098@gmail.com",
                     email2: " samuelfigueiredo2098@gmail.com"
