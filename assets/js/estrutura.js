@@ -13,8 +13,10 @@ $(document).ready(function () {
                         {nome: "EBEC Aveiro", link: "#ebec"},
                         {nome: "Edições Anteriores", link: "#ebecAnt"}, 
                         {nome: "Programa",link: "#programa" }, 
-                        {nome:"Inscrição",link: "#apply"}, 
-                        {nome:"Testemunhos", link:"#testemunhos"}
+                        {nome:"Inscrição",link: "#apply"},
+                        /*
+                                                {nome:"Testemunhos", link:"#testemunhos"}
+                        */
                     ]
                 },
                 {
@@ -47,7 +49,9 @@ $(document).ready(function () {
             icones: [
                 {title: "Ronda Local", classe: "fa-map-pin"},
                 {title: "Modalidades", classe: "fa-tools"},
-                {title: "Formação", classe: "fa-chalkboard-teacher"},
+                /*
+                                {title: "Formação", classe: "fa-chalkboard-teacher"},
+                */
                 {title: "Ronda Nacional", classe: "fa-award"},
             ],
             seccoes: {
@@ -62,7 +66,7 @@ $(document).ready(function () {
                         "No sentido de promover uma melhor relação entre estudantes e empresas, a EBEC Aveiro organizará, " +
                         "à parte da competição, uma <span style='color:orange'>feira de empresas</span> juntamente " +
                         "com uma formação complementar para os nossos participants, que irão ocorrer no dia 12 de março.",
-                        "Para qualquer dúvida, podes-se informar melhor na secção FAQ ou contactar diretamente um de nossos membros ou pelo contacto da associação. "
+                        "Para qualquer dúvida, podes-te informar melhor na secção FAQ ou contactar diretamente um dos nossos membros ou pelo contacto da associação. "
                     ],
                     img: "assets/img/event/ebec-aveiro.png"
                 },
@@ -154,13 +158,14 @@ $(document).ready(function () {
             sectionSubheading: "Para te inscreveres só precisas de efetuar os seguintes passos:",
             corpo: [
                 " Leia o regulamento que se encontra <a href='assets/Regulamento.pdf' target='_blank'>aqui</a>.",
-                "Regista-te no site do BEST. Podes fazê-lo " +
+                "Efetua a tua inscrição a partir desta <a target='_blank' href='https://www.best.eu.org/event/localDetails.jsp?event=o538jqi&fbclid=IwAR3YVlMmhDv3fughYlUgQPMKH3UPoZUpQgKrtmuWPR9Y1ehi5JgPXj54lW0'>página</a>.",
+                /*"Regista-te no site do BEST. Podes fazê-lo " +
                 "<a target='_blank' href='https://www.best.eu.org/account/registration.jsp'>aqui</a>.",
                 " Efetua a pré-inscrição na EBEC Aveiro 2020. Podes fazê-lo " +
                 "<a href=\"https://www.best.eu.org/event/localDetails.jsp?event=o538j3f\" target=\"_blank\">aqui</a>.",*/
                 " Indica o nome da tua equipa. Todos os elementos da equipa devem indicar o mesmo nome.",
-                " Preenche os dados pedidos. Todos os campos deverão ser preenchidos, à exceção do campo \"Motivation Letter\", " +
-                "que é de preenchimento facultativo.* Clica em 'Apply' para finalizares esta parte.",
+                " Preenche os dados pedidos. Todos os campos deverão ser preenchidos.",/*, à exceção do campo \"Motivation Letter\", " +
+                "que é de preenchimento facultativo.* Clica em 'Apply' para finalizares esta parte.",*/
                 "Já tens equipa? Então terminaste a tua pré-inscrição para a EBEC Aveiro 2020. Brevemente irás " +
                 "receber um e-mail de confirmação de inscrição com mais informação sobre o evento."
             ]
@@ -330,7 +335,7 @@ $(document).ready(function () {
         team: {
             sectionHeading: "Equipa",
             equipa: {
-                MO:{nome: "Samuel G. Figueiredo", role: "Coordenador da EBEC Aveiro 2020" },
+                MO: {nome: "Samuel G. Figueiredo", role: "Coordenador da EBEC Aveiro 2020"},
                 TP:{nome: "Joana Batista", role: "Responsável de Tópico" },
                 CR:{
                     nome: "Pedro Vilares",
@@ -350,7 +355,7 @@ $(document).ready(function () {
         becomePartner: {
             sectionHeading: "Torne-se Nosso parceiro",
             corpo: [
-                "Ao tornar-se nosso parceiro, a sua empresa estará integrada na organização da EBEC Aveiro 2019, com uma " +
+                "Ao tornar-se nosso parceiro, a sua empresa estará integrada na organização da EBEC Aveiro 2020, com uma " +
                 "equipa dinâmica e empenhada em satisfazer as necessidades de desenvolvimento extracurricular dos estudantes, " +
                 "bem como os interesses da sua empresa. Terá a oportunidade de participar numa feira de empresas e num " +
                 "cocktail network.",
@@ -375,7 +380,7 @@ $(document).ready(function () {
             people: {
                 MO: {
                     nome: "Samuel G. Figueiredo",
-                    role: "Coordenador da EBEC Aveiro 2019",
+                    role: "Coordenador da EBEC Aveiro 2020",
                     tel: "+(351) 962 042 039",
                     email: "mailto:samuelfigueiredo2098@gmail.com",
                     email2: " samuelfigueiredo2098@gmail.com"

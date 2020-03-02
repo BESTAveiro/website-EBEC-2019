@@ -14,7 +14,9 @@ $(document).ready(function () {
                         {nome: "Preview Editions", link: '#ebecAnt'},
                         {nome: "Program", link: '#programa'},
                         {nome: "Subscribing", link: '#apply'},
-                        {nome: "Testimonials", link: '#testemunhos'}
+                        /*
+                                                {nome: "Testimonials", link: '#testemunhos'}
+                        */
                     ]
                 },
                 {
@@ -38,14 +40,16 @@ $(document).ready(function () {
         },
         entrada: {
             logo: "assets/img/logos/ebec-aveiro-color.png",
-            title: "March<br> 12th, 14th, 15th and 20th"
+            title: "March<br> 12th, 14th, 15th and 18th"
         },
         ebecAveiro: {
             sectionHeading: "EBEC Aveiro",
             icones: [
                 {title: "Local Round", classe: "fa-map-pin"},
                 {title: "Modalities", classe: "fa-tools"},
-                {title: "Formation", classe: "fa-chalkboard-teacher"},
+                /*
+                                {title: "Formation", classe: "fa-chalkboard-teacher"},
+                */
                 {title: "National Round", classe: "fa-award"},
             ],
             seccoes: {
@@ -152,13 +156,14 @@ $(document).ready(function () {
             sectionSubheading: "To apply you only need to follow this steps:",
             corpo: [
                 " Read the regulament that can be found <a href=\"../Regulamento.pdf\" target=\"_blank\">here</a>.",
-                " Sign up on BEST Website. You can do it " +
+                " Sign up through this <a target='_blank' href='https://www.best.eu.org/event/localDetails.jsp?event=o538jqi&fbclid=IwAR3YVlMmhDv3fughYlUgQPMKH3UPoZUpQgKrtmuWPR9Y1ehi5JgPXj54lW0'>page</a>.",
+                /*" Sign up on BEST Website. You can do it " +
                 "<a href=\"https://www.best.eu.org/account/registration.jsp\" target=\"_blank\">here</a>.",
                 " Do a pre-registration on EBEC Aveiro 2020. You can do it " +
                 "<a href=\"https://www.best.eu.org/event/localDetails.jsp?event=o538j3f\" target=\"_blank\">here</a>.",*/
                 " Write the name of your team. All the members of the team have to write the same name.",
-                " Fill all the fields, with exception of 'Motivation Letter', which it's optional. Click on 'Apply' to finish " +
-                "this part.",
+                " Fill all the fields.", /*with exception of 'Motivation Letter', which it's optional. Click on 'Apply' to finish " +
+                "this part.",*/
                 " Already have a team? So you finished your pre-registration to EBEC Aveiro 2020. Soon you will receive an " +
                 "email with confirmation of registration and more information about the event."
             ]
@@ -328,7 +333,7 @@ $(document).ready(function () {
         team: {
             sectionHeading: "The Team",
             equipa: {
-                MO:{nome: "Samuel G. Figueiredo", role: "Coordinator of EBEC Aveiro 2020"},
+                MO: {nome: "Samuel G. Figueiredo", role: "Coordinator of EBEC Aveiro 2020"},
                 TP:{nome: "Joana Batista", role: "Topic Responsible"},
                 CR:{nome: "Pedro Vilares", role: "Corporate Relations Responsible"},
                 MKT:{nome: "Samuel Santos", role: "Marketing Responsible"}
@@ -342,7 +347,7 @@ $(document).ready(function () {
         becomePartner: {
             sectionHeading: "Become Our Partner",
             corpo: [
-                "By becoming our partner, your company will be integrated in the organization of EBEC Aveiro 2019, with " +
+                "By becoming our partner, your company will be integrated in the organization of EBEC Aveiro 2020, with " +
                 "a dynamic team, that is committed to satisfy the needs of extracurricular activities development of the " +
                 "students, as much as the interests of your company. You will have the opportunity to participate in our " +
                 "Job Fair and in our Cocktail Network.",
