@@ -154,14 +154,13 @@ $(document).ready(function () {
             sectionSubheading: "Para te inscreveres só precisas de efetuar os seguintes passos:",
             corpo: [
                 " Leia o regulamento que se encontra <a href='assets/Regulamento.pdf' target='_blank'>aqui</a>.",
-                "Efetua a tua inscrição por este <a target='_blank' href='https://docs.google.com/forms/d/e/1FAIpQLSfQgBWjzjrGFyrmDBls5tbtn-gmQzKGUkOjhV2aOoPDtd4tJA/viewform'>formulário</a>.",
-                /*"Regista-te no site do BEST. Podes fazê-lo " +
+                "Regista-te no site do BEST. Podes fazê-lo " +
                 "<a target='_blank' href='https://www.best.eu.org/account/registration.jsp'>aqui</a>.",
                 " Efetua a pré-inscrição na EBEC Aveiro 2020. Podes fazê-lo " +
                 "<a href=\"https://www.best.eu.org/event/localDetails.jsp?event=o538j3f\" target=\"_blank\">aqui</a>.",*/
                 " Indica o nome da tua equipa. Todos os elementos da equipa devem indicar o mesmo nome.",
-                " Preenche os dados pedidos. Todos os campos deverão ser preenchidos.",/*, à exceção do campo \"Motivation Letter\", " +
-                "que é de preenchimento facultativo.* Clica em 'Apply' para finalizares esta parte.",*/
+                " Preenche os dados pedidos. Todos os campos deverão ser preenchidos, à exceção do campo \"Motivation Letter\", " +
+                "que é de preenchimento facultativo.* Clica em 'Apply' para finalizares esta parte.",
                 "Já tens equipa? Então terminaste a tua pré-inscrição para a EBEC Aveiro 2020. Brevemente irás " +
                 "receber um e-mail de confirmação de inscrição com mais informação sobre o evento."
             ]
@@ -331,7 +330,7 @@ $(document).ready(function () {
         team: {
             sectionHeading: "Equipa",
             equipa: {
-                MO:{nome: "Samuel G. Figueiredo", role: "Coordenador da EBEC Aveiro 2019" },
+                MO:{nome: "Samuel G. Figueiredo", role: "Coordenador da EBEC Aveiro 2020" },
                 TP:{nome: "Joana Batista", role: "Responsável de Tópico" },
                 CR:{
                     nome: "Pedro Vilares",
