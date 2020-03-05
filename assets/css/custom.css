@@ -467,6 +467,19 @@ html {
   width:230px;
   height:230px;
   margin: 0 auto;
+  -webkit-transition: all .6s ease-in-out;
+     -moz-transition: all .6s ease-in-out;
+      -ms-transition: all .6s ease-in-out;
+       -o-transition: all .6s ease-in-out;
+          transition: all .6s ease-in-out;
+}
+
+.img-contact:hover {
+    -webkit-transform: scale3d(1.15,1.15,1);
+       -moz-transform: scale3d(1.15,1.15,1);
+        -ms-transform: scale3d(1.15,1.15,1);
+         -o-transform: scale3d(1.15,1.15,1);
+            transform: scale3d(1.15,1.15,1);
 }
 
 .img-jury {
@@ -686,6 +699,14 @@ footer{
     max-width: 320px;
   }
 
+}
+
+.tran3s {
+  -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+      -ms-transition: all .3s ease-in-out;
+       -o-transition: all .3s ease-in-out;
+          transition: all .3s ease-in-out;
 }
 
 
