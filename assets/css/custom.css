@@ -214,7 +214,7 @@ html {
   padding: 10px 10px;
   -webkit-transition: color 500ms;
   transition: color 500ms;
-  font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'Montserrat', "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 100;
   text-size: 25px;
@@ -364,6 +364,74 @@ html {
   font-size: 16px;
 }
 
+.portfolio-link {
+  position: relative;
+  width: 100%;
+  max-width: 230px;
+  max-height: 230px;
+  height: 100%;
+}
+
+/* The overlay effect - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1;
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+/* When you mouse over the container, fade in the overlay title */
+.container:hover .overlay {
+  opacity: 1;
+}
+
+#portfolio .portfolio-link .portfolio-hover {
+  position: absolute;
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+  opacity: 0;
+  background: rgb(0, 119, 181);
+  max-width: 230px;
+  min-width: 230px;
+  max-height: 230px;
+  min-height: 230px;
+  /*width: 150px;
+  height: 150px;*/
+  border-radius: 50%;
+}
+#portfolio .portfolio-link .portfolio-hover:hover {
+  opacity: 0.7; 
+}
+#portfolio .portfolio-link .portfolio-hover .portfolio-hover-content {
+  font-size: 6em;
+  text-align: center;
+  margin-top: 30px;
+  color: white;
+  max-width: 230px;
+  min-width: 230px;
+  max-height: 230px;
+  min-height: 230px;
+  /*width: 150px;
+  height: 150px;*/
+  border-radius: 50%;
+}
+#portfolio .portfolio-link .portfolio-hover .portfolio-hover-content i {
+  margin-top: -12px; 
+}
+
+#portfolio * {
+  z-index: 2; 
+}
+
 /*Special button*/
 .button{
   border: none;
@@ -464,8 +532,10 @@ html {
 }
 
 .img-contact {
-  width:230px;
-  height:230px;
+  max-width: 230px;
+  min-width: 230px;
+  max-height: 230px;
+  min-height: 230px;
   margin: 0 auto;
   -webkit-transition: all .6s ease-in-out;
      -moz-transition: all .6s ease-in-out;
