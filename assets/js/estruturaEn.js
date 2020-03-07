@@ -233,8 +233,6 @@ $(document).ready(function () {
         faqs: {
             sectionHeading: "FAQ",
             sectionSubHeading: "Frequently Asked Questions",
-            sectionSubHeading1: "TEAM DESIGN",
-            sectionSubHeading2: "CASE STUDY",
             vetor: [
                 {
                     p: "How long does the competition last?",
@@ -300,30 +298,7 @@ $(document).ready(function () {
         },
         juri: {
             sectionHeading: "Jury",
-            sectionSubHeading: "Who will evaluate the competition",
-            sectionSubHeading1: "TEAM DESIGN",
-            sectionSubHeading2: "CASE STUDY",
-            juri1: [
-                {
-                    nome: "Vitor Bonifácio",
-                    foto: 'assets/img/juri/1.jpg',
-                    conta: "https://www.linkedin.com/in/vitor-bonif%C3%A1cio-473455127/"
-                },
-                {
-                    nome: "Ricardo Sousa",
-                    foto: "assets/img/juri/2.jpg",
-                    conta: "https://www.linkedin.com/in/ricardo-sousa-02a61317/"
-                },
-                {nome: "Bohdan Kulyk", foto: "assets/img/juri/3.jpg", conta: "https://www.linkedin.com/in/bohdankulyk/"}
-            ],
-            juri2: [
-                {nome: "Diogo Gomes", foto: "assets/img/juri/4.jpg", conta: "https://www.linkedin.com/in/dgomes/"},
-                {
-                    nome: "João Labrincha",
-                    foto: "assets/img/juri/5.jpg",
-                    conta: "https://www.linkedin.com/in/jo%C3%A3o-labrincha-0b69549/"
-                }
-            ]
+            sectionSubHeading: "Who will evaluate the competition"           
         },
         partners: {
             sectionHeading: "Partners",
@@ -333,15 +308,15 @@ $(document).ready(function () {
         team: {
             sectionHeading: "The Team",
             equipa: {
-                MO: {nome: "Samuel G. Figueiredo", role: "Coordinator of EBEC Aveiro 2020"},
-                TP:{nome: "Joana Batista", role: "Topic Responsible"},
-                CR:{nome: "Pedro Vilares", role: "Corporate Relations Responsible"},
-                MKT:{nome: "Samuel Santos", role: "Marketing Responsible"}
+                MO: {role: "Coordinator of EBEC Aveiro 2020"},
+                TP:{role: "Topic Responsible"},
+                CR:{role: "Corporate Relations Responsible"},
+                MKT:{role: "Marketing Responsible"}
             },
             equipa2: {
-                IT:{nome: "Alexandra Carvalho", role: "Information Tecnology Responsible"},
-                LOG:{nome: "Laura Silva", role: "Logistic Responsible"},
-                PAX:{nome: "Mariana Rodrigues", role: "Participants Responsible"}
+                IT:{role: "Information Tecnology Responsible"},
+                LOG:{role: "Logistic Responsible"},
+                PAX:{role: "Participants Responsible"}
             }
         },
         becomePartner: {
@@ -373,29 +348,19 @@ $(document).ready(function () {
             people: {
                 MO: {
                     nome: "Samuel G. Figueiredo",
-                    role: "Coordinator of EBEC Aveiro 2020",
-                    tel: "+(351) 962 042 039",
-                    email: "m ailto:samuelfigueiredo2098@gmail.com",
-                    email2: "samuelfigueiredo2098@gmail.com"
+                    role: "Coordinator of EBEC Aveiro 2020"
                 },
                 presi: {
                     nome: "Diogo Prata",
-                    role: "President of BEST Aveiro",
-                    tel: "+(351) 925 478 764",
-                    email: "mailto:diogosprata@gmail.com",
-                    email2: " diogosprata@gmail.com"
+                    role: "President of BEST Aveiro"
                 },
                 cr: {
                     nome: "Pedro Vilares",
-                    role: "Corporate Relations Responsible",
-                    tel: "+(351) 910 873 614",
-                    email: "mailto:pedrovilares98@gmail.com",
-                    email2: " pedrovilares98@gmail.com"
+                    role: "Corporate Relations Responsible"
                 }
             }
         },
         bestAveiro: {
-            img: "assets/img/logos/best-aveiro-color.png",
             sectionHeading: "About the BEST Aveiro",
             corpo: [
                 "Founded oficially in 2010, the Local Group Best Aveiro, hosted in University of Aveiro, counts with 45 " +

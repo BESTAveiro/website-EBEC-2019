@@ -209,7 +209,7 @@
         </div>
     </div>
     <div class="row text-center text-white">
-        <div class="text-center col-md-2 col-sm-4 col-md-offset-2" data-bind="with: schedule0">
+        <div class="text-center col-md-2 col-sm-6 col-md-offset-2 schedule" data-bind="with: schedule0">
             <h4 class="service-heading text-orange" data-bind="text: diaMes" style="font-size: 24px;"></h4>
             <h5 class="text-orange" data-bind="text: diaSemana" style="font-size:22px"></h5>
             <div data-bind="foreach: eventos">
@@ -220,7 +220,7 @@
                 </div>
             </div>
         </div>
-        <div class="text-center col-md-2 col-sm-4" data-bind="with: schedule1">
+        <div class="text-center col-md-2 col-sm-6 schedule" data-bind="with: schedule1">
             <h4 class="service-heading text-orange" data-bind="text: diaMes" style="font-size: 24px;"></h4>
             <h5 class="text-orange" data-bind="text: diaSemana" style="font-size:22px"></h5>
             <div data-bind="foreach: eventos">
@@ -231,7 +231,7 @@
                 </div>
             </div>
         </div>
-        <div class="text-center col-md-2 col-sm-4" data-bind="with: schedule2">
+        <div class="text-center col-md-2 col-sm-6 schedule" data-bind="with: schedule2">
             <h4 class="service-heading text-orange" data-bind="text: diaMes" style="font-size: 24px;"></h4>
             <h5 class="text-orange" data-bind="text: diaSemana" style="font-size:22px"></h5>
             <div data-bind="foreach: eventos">
@@ -242,7 +242,7 @@
                 </div>
             </div>
         </div>
-        <div class="text-center col-md-2 col-sm-4" data-bind="with: schedule3">
+        <div class="text-center col-md-2 col-sm-6 schedule" data-bind="with: schedule3">
             <h4 class="service-heading text-orange" data-bind="text: diaMes" style="font-size: 24px;"></h4>
             <h5 class="text-orange" data-bind="text: diaSemana" style="font-size:22px"></h5>
             <div data-bind="foreach: eventos">
@@ -349,7 +349,7 @@
     </div>
 </div>
 
-<div class="container division-blue division-main hidden" data-bind="with: juri" id="juri">
+<div class="container division-blue division-main" data-bind="with: juri" id="juri">
     <div class="row">
         <div class="col-lg-12 text-center">
             <h2 class="section-heading text-orange" data-bind="text: sectionHeading"></h2>
@@ -359,38 +359,56 @@
     </div>
     <div class="row">
         <div class="col-xs-12 text-center">
-            <h3 class="text-orange" data-bind="text: sectionSubHeading1"
-                style="font-weight: bold;font-size: 35px; padding-bottom: 20px;"></h3>
+            <h3 class="text-orange"
+                style="font-weight: bold;font-size: 35px; padding-bottom: 20px;">CASE STUDY</h3>
         </div>
-        <div data-bind="foreach: juri1">
-            <div class="col-md-4 col-sm-6" data-bind="css: {'col-sm-6': $index() != 2}">
+        <div class="row">
+            <div class="col-sm-6">
                 <div class="team-member">
-                    <img alt="juri" alt="juri"
+                    <img alt="juri" 
                          class="img-responsive img-circle img-center img-thumbnail img-jury"
-                         data-bind="attr: {src: foto}">
-                    <h4 class="text-white" data-bind="text: nome"></h4>
-                    <a data-bind="attr: {href: conta}"
-                       href="https://www.linkedin.com/in/vitor-bonif%C3%A1cio-473455127/"
-                       target="_blank">
-                        <i class="fab fa-linkedin fa-3x" style="color:white"></i>
-                    </a>
+                         src="assets/img/juri/1.jpg" >
+                    <h4 class="text-white">Nuno Lopes</h4>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="team-member">
+                    <img alt="juri" 
+                         class="img-responsive img-circle img-center img-thumbnail img-jury"
+                         src="assets/img/juri/2.jpg" >
+                    <h4 class="text-white">Fábio Fernandes</h4>
+                </div>
+            </div>
+            <div class="col-md-4 hidden">
+                <div class="team-member">
+                    <img alt="juri" 
+                         class="img-responsive img-circle img-center img-thumbnail img-jury"
+                         src="" >
+                    <h4 class="text-white"></h4>
                 </div>
             </div>
         </div>
     </div>
     <div class="row">
         <div class="col-xs-12 text-center">
-            <h3 class="text-orange" data-bind="text: sectionSubHeading2"
-                style="font-weight: bold;font-size: 35px; padding-bottom: 20px;"></h3>
+            <h3 class="text-orange" 
+                style="font-weight: bold;font-size: 35px; padding-bottom: 20px;">TEAM DESIGN</h3>
         </div>
-        <div data-bind="foreach: juri2">
-            <div class="col-sm-6">
+        <div class="row">
+            <div class="">
                 <div class="team-member">
-                    <img alt="juri" alt="juri" class="img-responsive img-center img-circle img-thumbnail img-jury"
-                         data-bind="attr: {src: foto}">
-                    <h4 class="text-white" data-bind="text: nome"></h4>
-                    <a data-bind="attr: {href: conta}" target="_blank"><i class="fab fa-linkedin fa-3x"
-                                                                          style="color:white"></i></a>
+                    <img alt="juri" 
+                         class="img-responsive img-circle img-center img-thumbnail img-jury"
+                         src="assets/img/juri/3.jpg" >
+                    <h4 class="text-white">Victor Amaral</h4>
+                </div>
+            </div>
+            <div class="col-md-6 hidden">
+                <div class="team-member">
+                    <img alt="juri" 
+                         class="img-responsive img-circle img-center img-thumbnail img-jury"
+                         src="" >
+                    <h4 class="text-white"></h4>
                 </div>
             </div>
         </div>
@@ -406,7 +424,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-sm-offset-2 col-sm-4 hidden" style="height:180px">
+        <div class="col-sm-offset-2 col-sm-4" style="height:180px">
             <a href="http://www.ipdj.pt/">
                 <img alt="ipdj" class="img-responsive img-center" src="assets\img\partners\annual\ipdj.png"
                      style="max-height:120px">
@@ -432,7 +450,7 @@
         </div>
         <div class="col-sm-6 col-sm-offset-3">
             <img alt="sol" class="img-responsive img-center" src="assets\img\partners\media\sol.png"
-                 style="max-height:75px">
+                 style="max-height: 150px">
         </div>
         <!--<div class="row">
             <br>
@@ -477,34 +495,57 @@
     <div class="row" data-bind="with: equipa">
         <div class="col-lg-3 col-sm-6" data-bind="with: MO">
             <div class="team-member">
-                <img alt="member" class="img-responsive img-thumbnail img-circle img-contact"
-                     src="assets/img/team/MO.jpg">
-                <h4 class="text-orange" data-bind="text: nome"></h4>
+                <img class="img-contact img-responsive img-thumbnail img-circle" src="assets/img/team/MO.jpg" alt="member">
+                <h4 class="text-orange">Samuel G. Figueiredo</h4>
                 <p class="text-white" data-bind="text: role"></p>
+                <p class="text-blue-light"> 
+                    <i class="fa fa-envelope"></i> 
+                    <a href="mailto:samuelfigueiredo2098@gmail.com" style="font-size: 15px;">samuelfigueiredo2098@gmail.com</a>
+                    <br>
+                    <i class="fa fa-phone"></i> <b>+(351) 962 042 039</b>
+                </p>
             </div>
         </div>
         <div class="col-lg-3 col-sm-6" data-bind="with: TP">
             <div class="team-member">
                 <img alt="member" class="img-responsive img-thumbnail img-circle img-contact"
                      src="assets/img/team/TP.jpg">
-                <h4 class="text-orange" data-bind="text: nome"></h4>
+                <h4 class="text-orange">Joana Batista</h4>
                 <p class="text-white" data-bind="text: role"></p>
+                <p class="text-blue-light"> 
+                    <i class="fa fa-envelope"></i> 
+                    <a href="mailto:joanabatista.028@gmail.com" style="font-size: 15px;">joanabatista.028@gmail.com</a>
+                    <br>
+                    <i class="fa fa-phone"></i> <b>+(351) 918 258 020</b>
+                </p>
             </div>
         </div>
         <div class="col-lg-3 col-sm-6" data-bind="with: CR">
             <div class="team-member">
                 <img alt="member" class="img-responsive img-thumbnail img-circle img-contact"
                      src="assets/img/team/CR.jpg">
-                <h4 class="text-orange" data-bind="text: nome"></h4>
+                <h4 class="text-orange">Pedro Vilares</h4>
                 <p class="text-white" data-bind="text: role"></p>
+                <p class="text-blue-light"> 
+                    <i class="fa fa-envelope"></i> 
+                    <a href="mailto:pedrovilares98@gmail.com" style="font-size: 15px;">pedrovilares98@gmail.com</a>
+                    <br>
+                    <i class="fa fa-phone"></i> <b>+(351) 910 873 614</b>
+                </p>
             </div>
         </div>
         <div class="col-lg-3 col-sm-6" data-bind="with: MKT">
             <div class="team-member">
                 <img alt="member" class="img-responsive img-thumbnail img-circle img-contact"
                      src="assets/img/team/MKT.jpg">
-                <h4 class="text-orange" data-bind="text: nome"></h4>
+                <h4 class="text-orange">Samuel Santos</h4>
                 <p class="text-white" data-bind="text: role"></p>
+                <p class="text-blue-light"> 
+                    <i class="fa fa-envelope"></i> 
+                    <a href="mailto:leitaobairrada@gmail.com" style="font-size: 15px;">leitaobairrada@gmail.com</a>
+                    <br>
+                    <i class="fa fa-phone"></i> <b>+(351) 939 901 551</b>
+                </p>
             </div>
         </div>
     </div>
@@ -513,24 +554,42 @@
             <div class="team-member">
                 <img alt="member" class="img-responsive img-thumbnail img-circle img-contact"
                      src="assets/img/team/IT.jpg">
-                <h4 class="text-orange" data-bind="text: nome"></h4>
+                <h4 class="text-orange">Alexandra Carvalho</h4>
                 <p class="text-white" data-bind="text: role"></p>
+                <p class="text-blue-light"> 
+                    <i class="fa fa-envelope"></i> 
+                    <a href="mailto:alexandra.carval.00@gmail.com" style="font-size: 15px;">alexandra.carval.00@gmail.com</a>
+                    <br>
+                    <i class="fa fa-phone"></i> <b>+(351) 937 784 157</b>
+                </p>
             </div>
         </div>
         <div class="col-lg-4 col-sm-6" data-bind="with: LOG">
             <div class="team-member">
                 <img alt="member" class="img-responsive img-thumbnail img-circle img-contact"
                      src="assets/img/team/LOG.jpg">
-                <h4 class="text-orange" data-bind="text: nome"></h4>
+                <h4 class="text-orange">Laura Silva</h4>
                 <p class="text-white" data-bind="text: role"></p>
+                <p class="text-blue-light"> 
+                    <i class="fa fa-envelope"></i> 
+                    <a href="mailto:laurajasilva@gmail.com" style="font-size: 15px;">laurajasilva@gmail.com</a>
+                    <br>
+                    <i class="fa fa-phone"></i> <b>+(351) 924 015 869</b>
+                </p>
             </div>
         </div>
         <div class="col-lg-4" data-bind="with: PAX">
             <div class="team-member">
                 <img alt="member" class="img-responsive img-thumbnail img-circle img-contact"
                      src="assets/img/team/PAX.jpg">
-                <h4 class="text-orange" data-bind="text: nome"></h4>
+                <h4 class="text-orange">Mariana Rodrigues</h4>
                 <p class="text-white" data-bind="text: role"></p>
+                <p class="text-blue-light"> 
+                    <i class="fa fa-envelope"></i> 
+                    <a href="mailto:rodriguesmariana2010@gmail.com" style="font-size: 15px;">rodriguesmariana2010@gmail.com</a>
+                    <br>
+                    <i class="fa fa-phone"></i> <b>+(351) 910 329 57</b>
+                </p>
             </div>
         </div>
     </div>
@@ -565,10 +624,10 @@
                 <h4 class="text-orange" data-bind="text: nome"></h4>
                 <p class="text-white" data-bind="text: role"></p>
                 <p class="text-blue-light">
-                    <i class="fa fa-envelope"></i>
-                    <a data-bind="attr: {href: email},text: email2"></a>
+                    <i class="fa fa-envelope"></i> 
+                    <a href="mailto:samuelfigueiredo2098@gmail.com">samuelfigueiredo2098@gmail.com</a>
                     <br>
-                    <i class="fa fa-phone"></i> <b data-bind="text: tel"></b>
+                    <i class="fa fa-phone"></i> <b>+(351) 962 042 039</b>
                 </p>
             </div>
         </div>
@@ -580,9 +639,9 @@
                 <p class="text-white" data-bind="text: role"></p>
                 <p class="text-blue-light">
                     <i class="fa fa-envelope"></i>
-                    <a data-bind="attr: {href: email},text: email2"></a>
+                    <a href="mailto:diogosprata@gmail.com">diogosprata@gmail.com</a>
                     <br>
-                    <i class="fa fa-phone"></i> <b data-bind="text: tel"></b>
+                    <i class="fa fa-phone"></i> <b>+(351) 925 478 764</b>
                 </p>
             </div>
         </div>
@@ -594,9 +653,9 @@
                 <p class="text-white" data-bind="text: role"></p>
                 <p class="text-blue-light">
                     <i class="fa fa-envelope"></i>
-                    <a data-bind="attr: {href: email},text: email2"></a>
+                    <a href="mailto:pedrovilares98@gmail.com">pedrovilares98@gmail.com</a>
                     <br>
-                    <i class="fa fa-phone"></i> <b data-bind="text: tel"></b>
+                    <i class="fa fa-phone"></i> <b>+(351) 910 873 614</b>
                 </p>
             </div>
         </div>
@@ -611,7 +670,7 @@
     </div>
     <div class="row">
         <div class="col-lg-5 col-lg-offset-0 col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10">
-            <img alt="logo-BEST" class="img-responsive img-center" data-bind="attr: {src: img}" src="">
+            <img alt="logo-BEST" class="img-responsive img-center" src="assets/img/logos/best-aveiro-color.png">
         </div>
         <div class="col-lg-7 text-blue text-justify" data-bind="foreach: corpo">
             <p class="" data-bind="text: $data" style="font-size: 16px"></p>

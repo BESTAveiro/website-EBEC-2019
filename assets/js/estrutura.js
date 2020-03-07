@@ -302,30 +302,7 @@ $(document).ready(function () {
         },
         juri: {
             sectionHeading: "Júri",
-            sectionSubHeading: "Quem irá julgar as provas",
-            sectionSubHeading1: "TEAM DESIGN",
-            sectionSubHeading2: "CASE STUDY",
-            juri1: [
-                {
-                    nome: "Vitor Bonifácio",
-                    foto: 'assets/img/juri/1.jpg',
-                    conta: "https://www.linkedin.com/in/vitor-bonif%C3%A1cio-473455127/"
-                },
-                {
-                    nome: "Ricardo Sousa",
-                    foto: "assets/img/juri/2.jpg",
-                    conta: "https://www.linkedin.com/in/ricardo-sousa-02a61317/"
-                },
-                {nome: "Bohdan Kulyk", foto: "assets/img/juri/3.jpg", conta: "https://www.linkedin.com/in/bohdankulyk/"}
-            ],
-            juri2: [
-                {nome: "Diogo Gomes", foto: "assets/img/juri/4.jpg", conta: "https://www.linkedin.com/in/dgomes/"},
-                {
-                    nome: "João Labrincha",
-                    foto: "assets/img/juri/5.jpg",
-                    conta: "https://www.linkedin.com/in/jo%C3%A3o-labrincha-0b69549/"
-                }
-            ]
+            sectionSubHeading: "Quem irá julgar as provas"
         },
         partners: {
             sectionHeading: "Parceiros",
@@ -335,21 +312,15 @@ $(document).ready(function () {
         team: {
             sectionHeading: "Equipa",
             equipa: {
-                MO: {nome: "Samuel G. Figueiredo", role: "Coordenador da EBEC Aveiro 2020"},
-                TP:{nome: "Joana Batista", role: "Responsável de Tópico" },
-                CR:{
-                    nome: "Pedro Vilares",
-                    role: "Responsável de Relações Empresariais"
-                },
-                MKT:{nome: "Samuel Santos", role: "Responsável de Marketing"}
+                MO: {role: "Coordenador da EBEC Aveiro 2020"},
+                TP:{role: "Responsável de Tópico" },
+                CR:{role: "Responsável de Relações Empresariais"},
+                MKT:{role: "Responsável de Marketing"}
             },
             equipa2: {
-                IT:{
-                    nome: "Alexandra Carvalho",
-                    role: "Responsável de Tecnologias de Informação"
-                },
-                LOG:{nome: "Laura Silva", role: "Responsável de Logística"},
-                PAX:{nome: "Mariana Rodrigues", role: "Responsável de Participantes"}
+                IT:{role: "Responsável de Tecnologias de Informação"},
+                LOG:{role: "Responsável de Logística"},
+                PAX:{role: "Responsável de Participantes"}
             }
         },
         becomePartner: {
@@ -380,29 +351,19 @@ $(document).ready(function () {
             people: {
                 MO: {
                     nome: "Samuel G. Figueiredo",
-                    role: "Coordenador da EBEC Aveiro 2020",
-                    tel: "+(351) 962 042 039",
-                    email: "mailto:samuelfigueiredo2098@gmail.com",
-                    email2: " samuelfigueiredo2098@gmail.com"
+                    role: "Coordenador da EBEC Aveiro 2020"
                 },
                 presi: {
                     nome: "Diogo Prata",
-                    role: "Presidente do BEST Aveiro",
-                    tel: "+(351) 925 478 764",
-                    email: "mailto:diogosprata@gmail.com",
-                    email2: " diogosprata@gmail.com"
+                    role: "Presidente do BEST Aveiro"
                 },
                 cr: {
                     nome: "Pedro Vilares",
-                    role: "Responsável de Relações Empresariais",
-                    tel: "+(351) 910 873 614",
-                    email: "mailto:pedrovilares98@gmail.com",
-                    email2: " pedrovilares98@gmail.com"
+                    role: "Responsável de Relações Empresariais"
                 }
             }
         },
         bestAveiro: {
-            img: "assets/img/logos/best-aveiro-color.png",
             sectionHeading: "Sobre o BEST Aveiro",
             corpo: [
                 "Fundado oficialmente em 2010, o Grupo Local BEST Aveiro, sediado na Universidade de Aveiro, conta com " +
