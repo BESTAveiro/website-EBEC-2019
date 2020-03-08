@@ -545,10 +545,19 @@ html {
 }
 
 .img-jury {
-  width: 250px;
-  height: 250px;
+  width: 150px;
+  height: 150px;
   margin: 0 auto;
 }
+
+.img-jury:hover {
+  cursor: pointer;
+  background-color: #EEA225;
+  width: 160px;
+  height: 160px;
+  margin: -10px;
+}
+
 
 .img-testimonial{
   height: 150px;
@@ -783,7 +792,11 @@ footer{
           transition: all .3s ease-in-out;
 }
 
+.img_modal {
+  max-height: 100px;
+  max-width: 1000px;
 
+}
 
 
 

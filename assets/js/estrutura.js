@@ -302,7 +302,7 @@ $(document).ready(function () {
         },
         juri: {
             sectionHeading: "Júri",
-            sectionSubHeading: "Quem irá julgar as provas"
+            sectionSubHeading: "Quem irá avaliar as provas"
         },
         partners: {
             sectionHeading: "Parceiros",
