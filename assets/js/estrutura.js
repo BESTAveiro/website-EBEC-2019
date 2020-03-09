@@ -157,7 +157,7 @@ $(document).ready(function () {
             sectionHeading: "Inscrição",
             sectionSubheading: "Para te inscreveres só precisas de efetuar os seguintes passos:",
             corpo: [
-                " Leia o regulamento que se encontra <a href='assets/Regulamento.pdf' target='_blank'>aqui</a>.",
+                " Lê o regulamento que se encontra <a href='assets/Regulamento.pdf' target='_blank'>aqui</a>.",
                 "Efetua a tua inscrição a partir desta <a target='_blank' href='https://www.best.eu.org/event/localDetails.jsp?event=o538jqi&fbclid=IwAR3YVlMmhDv3fughYlUgQPMKH3UPoZUpQgKrtmuWPR9Y1ehi5JgPXj54lW0'>página</a>.",
                 /*"Regista-te no site do BEST. Podes fazê-lo " +
                 "<a target='_blank' href='https://www.best.eu.org/account/registration.jsp'>aqui</a>.",
