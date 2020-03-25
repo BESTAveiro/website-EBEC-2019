@@ -45,15 +45,15 @@ $(document).ready(function () {
             title: "12, 14, 15 e 18 de março"
         },
         ebecAveiro: {
-            sectionHeading: "EBEC Aveiro",
-            icones: [
-                {title: "Ronda Local", classe: "fa-map-pin"},
-                {title: "Modalidades", classe: "fa-tools"},
+            icones: {
+                title1: "Ronda Local",
+                title2: "Modalidades",
                 /*
                                 {title: "Formação", classe: "fa-chalkboard-teacher"},
                 */
-                {title: "Ronda Nacional", classe: "fa-award"},
-            ],
+                title3: "Programa",
+                title4: "Ronda Nacional"
+            },
             seccoes: {
                 seccao1: {
                     ps: [
@@ -67,8 +67,7 @@ $(document).ready(function () {
                         "à parte da competição, uma <span style='color:orange'>feira de empresas</span> juntamente " +
                         "com uma formação complementar para os nossos participants, que irão ocorrer no dia 12 de março.",
                         "Para qualquer dúvida, podes-te informar melhor na secção FAQ ou contactar diretamente um dos nossos membros ou pelo contacto da associação. "
-                    ],
-                    img: "assets/img/event/ebec-aveiro.png"
+                    ]
                 },
                 seccao2: {
                     title: "Modalidades",
@@ -88,14 +87,55 @@ $(document).ready(function () {
                         }
                     ]
                 },
-                seccao3: [
+                seccao3: {
+                    title: "Programa",
+                    schedule0: {
+                            diaSemana: "Quinta", diaMes: "12 março",
+                            eventos: [
+                                {
+                                    hora: "11:00 - 18:00",
+                                    nome: "Feira de Empresas",
+                                    local: "Complexo Pedagógico, Universidade de Aveiro"
+                                },
+                                {
+                                    hora: "Horário a anunciar",
+                                    nome: "Formação Complementar",
+                                    local: "Complexo Pedagógico, Universidade de Aveiro"
+                                }
+                            ]
+                    },
+                    schedule1: {
+                            diaSemana: "Sábado", diaMes: "14 março",
+                            eventos: [
+                                {hora: "09:30 - 10:30", nome: "Check-in", local: "Universidade de Aveiro"},
+                                {hora: "10:30 - 12:30", nome: "Sessão de Abertura", local: "Universidade de Aveiro"},
+                                {hora: "12:30 - 13:00", nome: "Picture", local: "Universidade de Aveiro"},
+                                {hora: "13:00 - 14:30", nome: "Almoço", local: "Refeitório do Crasto, Universidade de Aveiro"},
+                                {hora: "14:30 - 00:00", nome: "Competição", local: "ESSUA, Universidade de Aveiro"}
+                            ]
+                    },
+                    schedule2: {
+                            diaSemana: "Domingo", diaMes: "15 março",
+                            eventos: [
+                                {hora: "00:00 - 14:30", nome: "Competição", local: "Universidade de Aveiro"}
+                            ]
+                    },
+                    schedule3: {
+                            diaSemana: "Quarta", diaMes: "18 março",
+                            eventos: [
+                                {hora: "13:30 - 18:00", nome: "Apresentações", local: "Universidade de Aveiro"},
+                                {hora: "18:00 - 19:00", nome: "Sessão de encerramento", local: "Universidade de Aveiro"}
+                            ]
+                    }
+                }
+                    /*[
                     "O BEST Aveiro volta a organizar mais uma edição dos <b class=\"text-orange\">BEST Training Days</b>, " +
                     "da EBEC Aveiro 2020, onde terás a oportunidade de desenvolver as tuas capacidades numa formação.",
                     "A formação decorrerá durante a tarde do dia <b class=\"text-orange\">12 de março</b> e é restrita " +
                     "aos participantes.",
                     "Todos os participantes do <b class=\"text-orange\">BEST Training Day</b> receberão um certificado " +
                     "de participação na formação."
-                ],
+                    ]*/,
                 seccao4: [
                     "A EBEC Portugal é a final nacional da competição de Engenharia do BEST.",
                     "A EBEC Portugal é uma Ronda Nacional organizada por 5 Grupos Locais do BEST de norte a sul do país. " +

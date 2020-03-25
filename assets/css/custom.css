@@ -170,16 +170,16 @@ html {
 }
 
 .tabs input[name="tab-control"]:nth-of-type(1):checked ~ .slider {
-  -webkit-transform: translateX(15%);
-  transform: translateX(15%);
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);
 }
 .tabs input[name="tab-control"]:nth-of-type(2):checked ~ .slider {
-  -webkit-transform: translateX(150%);
-  transform: translateX(150%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
 }
 .tabs input[name="tab-control"]:nth-of-type(3):checked ~ .slider {
-  -webkit-transform: translateX(280%);
-  transform: translateX(280%);
+  -webkit-transform: translateX(200%);
+  transform: translateX(200%);
 }
 .tabs input[name="tab-control"]:nth-of-type(4):checked ~ .slider {
   -webkit-transform: translateX(300%);
@@ -362,74 +362,6 @@ html {
 .team-member p {
     margin-top: 0;
   font-size: 16px;
-}
-
-.portfolio-link {
-  position: relative;
-  width: 100%;
-  max-width: 230px;
-  max-height: 230px;
-  height: 100%;
-}
-
-/* The overlay effect - lays on top of the container and over the image */
-.overlay {
-  position: absolute;
-  bottom: 0;
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  color: #f1f1f1;
-  width: 100%;
-  transition: .5s ease;
-  opacity:0;
-  color: white;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;
-}
-
-/* When you mouse over the container, fade in the overlay title */
-.container:hover .overlay {
-  opacity: 1;
-}
-
-#portfolio .portfolio-link .portfolio-hover {
-  position: absolute;
-  -webkit-transition: all ease 0.5s;
-  -moz-transition: all ease 0.5s;
-  transition: all ease 0.5s;
-  opacity: 0;
-  background: rgb(0, 119, 181);
-  max-width: 230px;
-  min-width: 230px;
-  max-height: 230px;
-  min-height: 230px;
-  /*width: 150px;
-  height: 150px;*/
-  border-radius: 50%;
-}
-#portfolio .portfolio-link .portfolio-hover:hover {
-  opacity: 0.7; 
-}
-#portfolio .portfolio-link .portfolio-hover .portfolio-hover-content {
-  font-size: 6em;
-  text-align: center;
-  margin-top: 30px;
-  color: white;
-  max-width: 230px;
-  min-width: 230px;
-  max-height: 230px;
-  min-height: 230px;
-  /*width: 150px;
-  height: 150px;*/
-  border-radius: 50%;
-}
-#portfolio .portfolio-link .portfolio-hover .portfolio-hover-content i {
-  margin-top: -12px; 
-}
-
-#portfolio * {
-  z-index: 2; 
 }
 
 /*Special button*/
@@ -796,13 +728,6 @@ footer{
        -o-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;
 }
-
-.img_modal {
-  max-height: 100px;
-  max-width: 1000px;
-
-}
-
 
 
 

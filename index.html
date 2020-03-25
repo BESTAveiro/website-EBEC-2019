@@ -36,11 +36,6 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
           integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-    <script>
-        $(document).ready(function () {
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script>
 
 </head>
 <body data-bind="with: corpo">
@@ -54,11 +49,6 @@
             </button>
             <a class="navbar-brand" href="#">
                 <img alt="roldana-EBEC" class="nav-logo-1" data-bind="attr: {src: img}">
-            </a>
-        </div>
-        <div class="navbar-right hidden-xs">
-            <a target="_blank" href="http://bestaveiro.web.ua.pt/">
-                <img alt="logo-BEST" class="nav-logo-2" data-bind="attr: {src: img2}">
             </a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
@@ -102,7 +92,7 @@
 
     <div class="row">
         <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-orange" data-bind="text: sectionHeading"></h2>
+            <h2 class="section-heading text-orange">EBEC Aveiro</h2>
             <br>
         </div>
     </div>
@@ -112,12 +102,33 @@
     <input type="radio" id="tab2" name="tab-control">
     <input type="radio" id="tab3" name="tab-control">
 
-    <ul class="nav nav-justified" data-bind="foreach: icones">
-        <li class="" data-bind="css: {active: $index() == 0}">
-            <label class="text-center" data-bind="attr: {for: 'tab' + $index()}" role="button">
-                <i class="fas" data-bind="class: classe"></i>
+    <ul class="nav nav-justified" data-bind="with: icones">
+        <li class="active">
+            <label class="text-center" for="tab0" role="button">
+                <i class="fas fa-map-pin"></i>
                 <br class="hidden-lg hidden-md hidden-xs">
-                <span class="hidden-xs" data-bind="text: title"></span>
+                <span class="hidden-xs" data-bind="text: title1"></span>
+            </label>
+        </li>
+        <li class="">
+            <label class="text-center" for="tab1" role="button">
+                <i class="fas fa-tools" ></i>
+                <br class="hidden-lg hidden-md hidden-xs">
+                <span class="hidden-xs" data-bind="text: title2"></span>
+            </label>
+        </li>
+        <li class="">
+            <label class="text-center" for="tab2" role="button">
+                <i class="fas fa-clock" ></i>
+                <br class="hidden-lg hidden-md hidden-xs">
+                <span class="hidden-xs" data-bind="text: title3"></span>
+            </label>
+        </li>
+        <li class="">
+            <label class="text-center" for="tab3" role="button">
+                <i class="fas fa-award"></i>
+                <br class="hidden-lg hidden-md hidden-xs">
+                <span class="hidden-xs" data-bind="text: title4"></span>
             </label>
         </li>
     </ul>
@@ -132,7 +143,7 @@
                  data-bind="with: seccao1" id="rondalocal">
             <div class="row">
                 <div class="col-lg-5 col-lg-offset-0 col-md-offset-0 col-md-5 col-sm-offset-2 col-sm-8">
-                    <img alt="ebec-aveiro" class="img-responsive" data-bind="attr: {src: img}" src="">
+                    <img alt="ebec-aveiro" class="img-responsive" src="assets/img/event/ebec-aveiro.png">
                 </div>
                 <div class="col-md-7 col-sm-12">
                     <div data-bind="foreach: ps">
@@ -155,6 +166,61 @@
                 </div>
             </div>
         </section>
+
+        <section class="division-blue vertical-align container-fluid seccao" data-bind="with: seccao3" id="programa">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading text-orange text-center" data-bind="text: title"></h2>
+                </div>
+            </div>
+            <div class="row text-center text-white">
+                <div class="text-center col-md-2 col-sm-6 col-md-offset-2 schedule" data-bind="with: schedule0">
+                    <h4 class="service-heading text-orange" data-bind="text: diaMes" style="font-size: 24px;"></h4>
+                    <h5 class="text-orange" data-bind="text: diaSemana" style="font-size:22px"></h5>
+                    <div data-bind="foreach: eventos">
+                        <div data-toggle="tooltip" style="vertical-align: middle">
+                            <p data-bind="text: hora" style="font-size:18px"></p>
+                            <p style="font-size:16px; margin-bottom: 1px; margin-top: 6px"><b data-bind="text: nome"></b></p>
+                            <p style="font-size:13px; margin-top: 1px;" class="text-orange"><b data-bind="text: local"></b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center col-md-2 col-sm-6 schedule" data-bind="with: schedule1">
+                    <h4 class="service-heading text-orange" data-bind="text: diaMes" style="font-size: 24px;"></h4>
+                    <h5 class="text-orange" data-bind="text: diaSemana" style="font-size:22px"></h5>
+                    <div data-bind="foreach: eventos">
+                        <div data-toggle="tooltip" style="vertical-align: middle">
+                            <p data-bind="text: hora" style="font-size:18px"></p>
+                            <p style="font-size:16px; margin-bottom: 1px; margin-top: 6px"><b data-bind="text: nome"></b></p>
+                            <p style="font-size:13px; margin-top: 1px;" class="text-orange"><b data-bind="text: local"></b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center col-md-2 col-sm-6 schedule" data-bind="with: schedule2">
+                    <h4 class="service-heading text-orange" data-bind="text: diaMes" style="font-size: 24px;"></h4>
+                    <h5 class="text-orange" data-bind="text: diaSemana" style="font-size:22px"></h5>
+                    <div data-bind="foreach: eventos">
+                        <div data-toggle="tooltip" style="vertical-align: middle">
+                            <p data-bind="text: hora" style="font-size:18px"></p>
+                            <p style="font-size:16px; margin-bottom: 1px; margin-top: 6px"><b data-bind="text: nome"></b></p>
+                            <p style="font-size:13px; margin-top: 1px;" class="text-orange"><b data-bind="text: local"></b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center col-md-2 col-sm-6 schedule" data-bind="with: schedule3">
+                    <h4 class="service-heading text-orange" data-bind="text: diaMes" style="font-size: 24px;"></h4>
+                    <h5 class="text-orange" data-bind="text: diaSemana" style="font-size:22px"></h5>
+                    <div data-bind="foreach: eventos">
+                        <div data-toggle="tooltip" style="vertical-align: middle">
+                            <p data-bind="text: hora" style="font-size:18px"></p>
+                            <p style="font-size:16px; margin-bottom: 1px; margin-top: 6px"><b data-bind="text: nome"></b></p>
+                            <p style="font-size:13px; margin-top: 1px;" class="text-orange"><b data-bind="text: local"></b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         <!--
                 <section class="division-blue container-fluid seccao" id="btd">
@@ -198,61 +264,6 @@
             </div>
         </div>
         <span data-bind="if: $index() == 0"><br></span>
-    </div>
-</section>
-
-
-<section class="container division-blue division-main" data-bind="with: programa" id="programa">
-    <div class="row">
-        <div class="col-lg-12">
-            <h2 class="section-heading text-orange text-center" data-bind="text: title"></h2>
-        </div>
-    </div>
-    <div class="row text-center text-white">
-        <div class="text-center col-md-2 col-sm-6 col-md-offset-2 schedule" data-bind="with: schedule0">
-            <h4 class="service-heading text-orange" data-bind="text: diaMes" style="font-size: 24px;"></h4>
-            <h5 class="text-orange" data-bind="text: diaSemana" style="font-size:22px"></h5>
-            <div data-bind="foreach: eventos">
-                <div data-toggle="tooltip" style="vertical-align: middle">
-                    <p data-bind="text: hora" style="font-size:18px"></p>
-                    <p style="font-size:16px; margin-bottom: 1px; margin-top: 6px"><b data-bind="text: nome"></b></p>
-                    <p style="font-size:13px; margin-top: 1px;" class="text-orange"><b data-bind="text: local"></b></p>
-                </div>
-            </div>
-        </div>
-        <div class="text-center col-md-2 col-sm-6 schedule" data-bind="with: schedule1">
-            <h4 class="service-heading text-orange" data-bind="text: diaMes" style="font-size: 24px;"></h4>
-            <h5 class="text-orange" data-bind="text: diaSemana" style="font-size:22px"></h5>
-            <div data-bind="foreach: eventos">
-                <div data-toggle="tooltip" style="vertical-align: middle">
-                    <p data-bind="text: hora" style="font-size:18px"></p>
-                    <p style="font-size:16px; margin-bottom: 1px; margin-top: 6px"><b data-bind="text: nome"></b></p>
-                    <p style="font-size:13px; margin-top: 1px;" class="text-orange"><b data-bind="text: local"></b></p>
-                </div>
-            </div>
-        </div>
-        <div class="text-center col-md-2 col-sm-6 schedule" data-bind="with: schedule2">
-            <h4 class="service-heading text-orange" data-bind="text: diaMes" style="font-size: 24px;"></h4>
-            <h5 class="text-orange" data-bind="text: diaSemana" style="font-size:22px"></h5>
-            <div data-bind="foreach: eventos">
-                <div data-toggle="tooltip" style="vertical-align: middle">
-                    <p data-bind="text: hora" style="font-size:18px"></p>
-                    <p style="font-size:16px; margin-bottom: 1px; margin-top: 6px"><b data-bind="text: nome"></b></p>
-                    <p style="font-size:13px; margin-top: 1px;" class="text-orange"><b data-bind="text: local"></b></p>
-                </div>
-            </div>
-        </div>
-        <div class="text-center col-md-2 col-sm-6 schedule" data-bind="with: schedule3">
-            <h4 class="service-heading text-orange" data-bind="text: diaMes" style="font-size: 24px;"></h4>
-            <h5 class="text-orange" data-bind="text: diaSemana" style="font-size:22px"></h5>
-            <div data-bind="foreach: eventos">
-                <div data-toggle="tooltip" style="vertical-align: middle">
-                    <p data-bind="text: hora" style="font-size:18px"></p>
-                    <p style="font-size:16px; margin-bottom: 1px; margin-top: 6px"><b data-bind="text: nome"></b></p>
-                    <p style="font-size:13px; margin-top: 1px;" class="text-orange"><b data-bind="text: local"></b></p>
-                </div>
-            </div>
-        </div>
     </div>
 </section>
 
@@ -362,7 +373,6 @@
             <h3 class="text-orange"
                 style="font-weight: bold;font-size: 35px; padding-bottom: 20px;">CASE STUDY</h3>
         </div>
-        <div class="row">
             <div class="col-sm-4">
                 <div class="team-member" data-toggle="modal" data-target="">
                     <a href="https://www.ua.pt/decivil/person/10318412" target="_blank">
@@ -393,14 +403,12 @@
                     </a>
                 </div>
             </div>
-        </div>
     </div>
     <div class="row">
         <div class="col-xs-12 text-center">
             <h3 class="text-orange"
                 style="font-weight: bold;font-size: 35px; padding-bottom: 20px; margin-top: 8%">TEAM DESIGN</h3>
         </div>
-        <div class="row">
             <div class="col-md-4">
                 <div class="team-member">
                     <a href="http://www.ciceco.ua.pt/index.php?tabela=pessoaldetail&menu=218&user=491" target="_blank">
@@ -431,75 +439,8 @@
                     </a>
                 </div>
             </div>
-        </div>
     </div>
 </div>
-
-<!--
-MODALS
--->
-
-<div id="Modal1" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Nuno Lopes</h4>
-                <img src="assets/img/juri/nuno_lopes.jpg" class="img_modal img-circle">
-            </div>
-            <div class="modal-body">
-                <p>Nuno Lopes (Engenheiro Civil pela Universidade de Aveiro) é Professor Auxiliar no Departamento de
-                    Engenharia Civil da Universidade de Aveiro, onde completou em 2009 o Doutoramento Europeu na área do
-                    comportamento ao fogo de estruturas metálicas. Leciona disciplinas, e orienta dissertações de
-                    doutoramento e de mestrado, na área de Estruturas em Engenharia Civil.
-                    <br>
-                    Tem participado em diversos
-                    projetos de investigação Europeus e Nacionais na área do comportamento ao fogo de estruturas
-                    metálicas, tendo publicado um número significativo de artigos em revistas e congressos
-                    internacionais e nacionais.
-                    <br>
-                    É o Diretor da revista metálica da associação Portuguesa de Construção
-                    Metálica e Mista (CMM). Participa em diferentes comissões técnicas de normalização. E é o Diretor
-                    técnico do Laboratório de Estruturas e Resistência ao Fogo da Universidade de Aveiro, tendo
-                    realizado vários pareceres técnicos sobre a resistência ao fogo de estruturas de edifícios e de
-                    outros elementos de construção.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-
-<div id="Modal2" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Nuno Lopes</h4>
-                <img src="assets/img/juri/fabio_fernandes.jpg" class="img_modal img-circle">
-            </div>
-            <div class="modal-body">
-                <p>Nuno Lopes (Engenheiro Civil pela Universidade de Aveiro) é Professor Auxiliar no Departamento de
-                    Engenharia Civil da Universidade de Aveiro, onde completou em 2009 o Doutoramento Europeu na área do
-                    comportamento ao fogo de estruturas metálicas. Leciona disciplinas, e orienta dissertações de
-                    doutoramento e de mestrado, na área de Estruturas em Engenharia Civil. Tem participado em diversos
-                    projetos de investigação Europeus e Nacionais na área do comportamento ao fogo de estruturas
-                    metálicas, tendo publicado um número significativo de artigos em revistas e congressos
-                    internacionais e nacionais. É o Diretor da revista metálica da associação Portuguesa de Construção
-                    Metálica e Mista (CMM). Participa em diferentes comissões técnicas de normalização. E é o Diretor
-                    técnico do Laboratório de Estruturas e Resistência ao Fogo da Universidade de Aveiro, tendo
-                    realizado vários pareceres técnicos sobre a resistência ao fogo de estruturas de edifícios e de
-                    outros elementos de construção.</p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-            </div>
-        </div>
-    </div>
-</div>
-
 
 <div class="division-gray division-main container" data-bind="with: partners" id="partners">
     <div class="row">

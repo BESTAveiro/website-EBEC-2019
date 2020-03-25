@@ -36,11 +36,6 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
           integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
-    <script>
-        $(document).ready(function () {
-            $('[data-toggle="tooltip"]').tooltip();
-        });
-    </script>
 
 </head>
 <body data-bind="with: corpo">
@@ -54,11 +49,6 @@
             </button>
             <a class="navbar-brand" href="#">
                 <img alt="roldana-EBEC" class="nav-logo-1" data-bind="attr: {src: img}">
-            </a>
-        </div>
-        <div class="navbar-right hidden-xs">
-            <a target="_blank" href="http://bestaveiro.web.ua.pt/">
-                <img alt="logo-BEST" class="nav-logo-2" data-bind="attr: {src: img2}">
             </a>
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
@@ -102,7 +92,7 @@
 
     <div class="row">
         <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-orange" data-bind="text: sectionHeading"></h2>
+            <h2 class="section-heading text-orange">EBEC Aveiro</h2>
             <br>
         </div>
     </div>
@@ -112,12 +102,33 @@
     <input type="radio" id="tab2" name="tab-control">
     <input type="radio" id="tab3" name="tab-control">
 
-    <ul class="nav nav-justified" data-bind="foreach: icones">
-        <li class="" data-bind="css: {active: $index() == 0}">
-            <label class="text-center" data-bind="attr: {for: 'tab' + $index()}" role="button">
-                <i class="fas" data-bind="class: classe"></i>
+    <ul class="nav nav-justified" data-bind="with: icones">
+        <li class="active">
+            <label class="text-center" for="tab0" role="button">
+                <i class="fas fa-map-pin"></i>
                 <br class="hidden-lg hidden-md hidden-xs">
-                <span class="hidden-xs" data-bind="text: title"></span>
+                <span class="hidden-xs" data-bind="text: title1"></span>
+            </label>
+        </li>
+        <li class="">
+            <label class="text-center" for="tab1" role="button">
+                <i class="fas fa-tools" ></i>
+                <br class="hidden-lg hidden-md hidden-xs">
+                <span class="hidden-xs" data-bind="text: title2"></span>
+            </label>
+        </li>
+        <li class="">
+            <label class="text-center" for="tab2" role="button">
+                <i class="fas fa-clock" ></i>
+                <br class="hidden-lg hidden-md hidden-xs">
+                <span class="hidden-xs" data-bind="text: title3"></span>
+            </label>
+        </li>
+        <li class="">
+            <label class="text-center" for="tab3" role="button">
+                <i class="fas fa-award"></i>
+                <br class="hidden-lg hidden-md hidden-xs">
+                <span class="hidden-xs" data-bind="text: title4"></span>
             </label>
         </li>
     </ul>
@@ -132,7 +143,7 @@
                  data-bind="with: seccao1" id="rondalocal">
             <div class="row">
                 <div class="col-lg-5 col-lg-offset-0 col-md-offset-0 col-md-5 col-sm-offset-2 col-sm-8">
-                    <img alt="ebec-aveiro" class="img-responsive" data-bind="attr: {src: img}" src="">
+                    <img alt="ebec-aveiro" class="img-responsive" src="assets/img/event/ebec-aveiro.png">
                 </div>
                 <div class="col-md-7 col-sm-12">
                     <div data-bind="foreach: ps">
@@ -155,6 +166,61 @@
                 </div>
             </div>
         </section>
+
+        <section class="division-blue vertical-align container-fluid seccao" data-bind="with: seccao3" id="programa">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h2 class="section-heading text-orange text-center" data-bind="text: title"></h2>
+                </div>
+            </div>
+            <div class="row text-center text-white">
+                <div class="text-center col-md-2 col-sm-6 col-md-offset-2 schedule" data-bind="with: schedule0">
+                    <h4 class="service-heading text-orange" data-bind="text: diaMes" style="font-size: 24px;"></h4>
+                    <h5 class="text-orange" data-bind="text: diaSemana" style="font-size:22px"></h5>
+                    <div data-bind="foreach: eventos">
+                        <div data-toggle="tooltip" style="vertical-align: middle">
+                            <p data-bind="text: hora" style="font-size:18px"></p>
+                            <p style="font-size:16px; margin-bottom: 1px; margin-top: 6px"><b data-bind="text: nome"></b></p>
+                            <p style="font-size:13px; margin-top: 1px;" class="text-orange"><b data-bind="text: local"></b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center col-md-2 col-sm-6 schedule" data-bind="with: schedule1">
+                    <h4 class="service-heading text-orange" data-bind="text: diaMes" style="font-size: 24px;"></h4>
+                    <h5 class="text-orange" data-bind="text: diaSemana" style="font-size:22px"></h5>
+                    <div data-bind="foreach: eventos">
+                        <div data-toggle="tooltip" style="vertical-align: middle">
+                            <p data-bind="text: hora" style="font-size:18px"></p>
+                            <p style="font-size:16px; margin-bottom: 1px; margin-top: 6px"><b data-bind="text: nome"></b></p>
+                            <p style="font-size:13px; margin-top: 1px;" class="text-orange"><b data-bind="text: local"></b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center col-md-2 col-sm-6 schedule" data-bind="with: schedule2">
+                    <h4 class="service-heading text-orange" data-bind="text: diaMes" style="font-size: 24px;"></h4>
+                    <h5 class="text-orange" data-bind="text: diaSemana" style="font-size:22px"></h5>
+                    <div data-bind="foreach: eventos">
+                        <div data-toggle="tooltip" style="vertical-align: middle">
+                            <p data-bind="text: hora" style="font-size:18px"></p>
+                            <p style="font-size:16px; margin-bottom: 1px; margin-top: 6px"><b data-bind="text: nome"></b></p>
+                            <p style="font-size:13px; margin-top: 1px;" class="text-orange"><b data-bind="text: local"></b></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center col-md-2 col-sm-6 schedule" data-bind="with: schedule3">
+                    <h4 class="service-heading text-orange" data-bind="text: diaMes" style="font-size: 24px;"></h4>
+                    <h5 class="text-orange" data-bind="text: diaSemana" style="font-size:22px"></h5>
+                    <div data-bind="foreach: eventos">
+                        <div data-toggle="tooltip" style="vertical-align: middle">
+                            <p data-bind="text: hora" style="font-size:18px"></p>
+                            <p style="font-size:16px; margin-bottom: 1px; margin-top: 6px"><b data-bind="text: nome"></b></p>
+                            <p style="font-size:13px; margin-top: 1px;" class="text-orange"><b data-bind="text: local"></b></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
 
         <!--
                 <section class="division-blue container-fluid seccao" id="btd">
@@ -198,61 +264,6 @@
             </div>
         </div>
         <span data-bind="if: $index() == 0"><br></span>
-    </div>
-</section>
-
-
-<section class="container division-blue division-main" data-bind="with: programa" id="programa">
-    <div class="row">
-        <div class="col-lg-12">
-            <h2 class="section-heading text-orange text-center" data-bind="text: title"></h2>
-        </div>
-    </div>
-    <div class="row text-center text-white">
-        <div class="text-center col-md-2 col-sm-6 col-md-offset-2 schedule" data-bind="with: schedule0">
-            <h4 class="service-heading text-orange" data-bind="text: diaMes" style="font-size: 24px;"></h4>
-            <h5 class="text-orange" data-bind="text: diaSemana" style="font-size:22px"></h5>
-            <div data-bind="foreach: eventos">
-                <div data-toggle="tooltip" style="vertical-align: middle">
-                    <p data-bind="text: hora" style="font-size:18px"></p>
-                    <p style="font-size:16px; margin-bottom: 1px; margin-top: 6px"><b data-bind="text: nome"></b></p>
-                    <p style="font-size:13px; margin-top: 1px;" class="text-orange"><b data-bind="text: local"></b></p>
-                </div>
-            </div>
-        </div>
-        <div class="text-center col-md-2 col-sm-6 schedule" data-bind="with: schedule1">
-            <h4 class="service-heading text-orange" data-bind="text: diaMes" style="font-size: 24px;"></h4>
-            <h5 class="text-orange" data-bind="text: diaSemana" style="font-size:22px"></h5>
-            <div data-bind="foreach: eventos">
-                <div data-toggle="tooltip" style="vertical-align: middle">
-                    <p data-bind="text: hora" style="font-size:18px"></p>
-                    <p style="font-size:16px; margin-bottom: 1px; margin-top: 6px"><b data-bind="text: nome"></b></p>
-                    <p style="font-size:13px; margin-top: 1px;" class="text-orange"><b data-bind="text: local"></b></p>
-                </div>
-            </div>
-        </div>
-        <div class="text-center col-md-2 col-sm-6 schedule" data-bind="with: schedule2">
-            <h4 class="service-heading text-orange" data-bind="text: diaMes" style="font-size: 24px;"></h4>
-            <h5 class="text-orange" data-bind="text: diaSemana" style="font-size:22px"></h5>
-            <div data-bind="foreach: eventos">
-                <div data-toggle="tooltip" style="vertical-align: middle">
-                    <p data-bind="text: hora" style="font-size:18px"></p>
-                    <p style="font-size:16px; margin-bottom: 1px; margin-top: 6px"><b data-bind="text: nome"></b></p>
-                    <p style="font-size:13px; margin-top: 1px;" class="text-orange"><b data-bind="text: local"></b></p>
-                </div>
-            </div>
-        </div>
-        <div class="text-center col-md-2 col-sm-6 schedule" data-bind="with: schedule3">
-            <h4 class="service-heading text-orange" data-bind="text: diaMes" style="font-size: 24px;"></h4>
-            <h5 class="text-orange" data-bind="text: diaSemana" style="font-size:22px"></h5>
-            <div data-bind="foreach: eventos">
-                <div data-toggle="tooltip" style="vertical-align: middle">
-                    <p data-bind="text: hora" style="font-size:18px"></p>
-                    <p style="font-size:16px; margin-bottom: 1px; margin-top: 6px"><b data-bind="text: nome"></b></p>
-                    <p style="font-size:13px; margin-top: 1px;" class="text-orange"><b data-bind="text: local"></b></p>
-                </div>
-            </div>
-        </div>
     </div>
 </section>
 
@@ -362,76 +373,72 @@
             <h3 class="text-orange"
                 style="font-weight: bold;font-size: 35px; padding-bottom: 20px;">CASE STUDY</h3>
         </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="team-member">
-            <a href="https://www.ua.pt/decivil/person/10318412" target="_blank">
-              <img alt="juri"
-                   class="img-responsive img-circle img-center img-thumbnail img-jury modal-dialog"
-                   src="assets/img/juri/nuno_lopes.jpg">
-              <h4 class="text-white">Nuno Lopes</h4>
-            </a>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="team-member">
-            <a href="https://www.ua.pt/dem/person/80384604" target="_blank">
-              <img alt="juri"
-                   class="img-responsive img-circle img-center img-thumbnail img-jury"
-                   src="assets/img/juri/fabio_fernandes.jpg">
-              <h4 class="text-white">Fábio Fernandes</h4>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="team-member">
-            <a href="https://www.ua.pt/geo/person/80343220" target="_blank">
-              <img alt="juri"
-                   class="img-responsive img-circle img-center img-thumbnail img-jury"
-                   src="assets/img/juri/nuno_duraes.jpg">
-              <h4 class="text-white">Nuno Durães</h4>
-            </a>
-          </div>
-        </div>
-      </div>
+            <div class="col-sm-4">
+                <div class="team-member" data-toggle="modal" data-target="">
+                    <a href="https://www.ua.pt/decivil/person/10318412" target="_blank">
+                        <img alt="juri"
+                             class="img-responsive img-circle img-center img-thumbnail img-jury modal-dialog"
+                             src="assets/img/juri/nuno_lopes.jpg">
+                    <h4 class="text-white">Nuno Lopes</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="team-member" data-toggle="modal" data-target="#">
+                    <a href="https://www.ua.pt/dem/person/80384604" target="_blank">
+                        <img alt="juri"
+                             class="img-responsive img-circle img-center img-thumbnail img-jury"
+                             src="assets/img/juri/fabio_fernandes.jpg">
+                    <h4 class="text-white">Fábio Fernandes</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="team-member">
+                    <a href="https://www.ua.pt/geo/person/80343220" target="_blank">
+                        <img alt="juri"
+                             class="img-responsive img-circle img-center img-thumbnail img-jury"
+                             src="assets/img/juri/nuno_duraes.jpg">
+                        <h4 class="text-white">Nuno Durães</h4>
+                    </a>
+                </div>
+            </div>
     </div>
     <div class="row">
         <div class="col-xs-12 text-center">
             <h3 class="text-orange"
-                style="font-weight: bold;font-size: 35px; padding-bottom: 20px;margin-top: 8%">TEAM DESIGN</h3>
+                style="font-weight: bold;font-size: 35px; padding-bottom: 20px; margin-top: 8%">TEAM DESIGN</h3>
         </div>
-      <div class="row">
-        <div class="col-md-4">
-          <div class="team-member">
-            <a href="http://www.ciceco.ua.pt/index.php?tabela=pessoaldetail&menu=218&user=491" target="_blank">
-              <img alt="juri"
-                   class="img-responsive img-circle img-center img-thumbnail img-jury"
-                   src="assets/img/juri/victor_amaral.jpg" style="max-height: 150px; max-width: 150px">
-              <h4 class="text-white">Victor Amaral</h4>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4 ">
-          <div class="team-member">
-            <a href="https://www.ua.pt/fis/person/16609333" target="_blank">
-              <img alt="juri"
-                   class="img-responsive img-circle img-center img-thumbnail img-jury"
-                   src="assets/img/juri/paulo_antunes.jpg">
-              <h4 class="text-white">Paulo Antunes</h4>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="team-member">
-            <a href="https://www.ua.pt/fis/person/10308556" target="_blank">
-              <img alt="juri"
-                   class="img-responsive img-circle img-center img-thumbnail img-jury"
-                   src="assets/img/juri/paulo_lopes.jpg">
-              <h4 class="text-white">Paulo Lopes</h4>
-            </a>
-          </div>
-        </div>
-      </div>
+            <div class="col-md-4">
+                <div class="team-member">
+                    <a href="http://www.ciceco.ua.pt/index.php?tabela=pessoaldetail&menu=218&user=491" target="_blank">
+                        <img alt="juri"
+                             class="img-responsive img-circle img-center img-thumbnail img-jury"
+                             src="assets/img/juri/victor_amaral.jpg">
+                    <h4 class="text-white">Victor Amaral</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4 ">
+                <div class="team-member">
+                    <a href="https://www.ua.pt/fis/person/16609333" target="_blank">
+                        <img alt="juri"
+                             class="img-responsive img-circle img-center img-thumbnail img-jury"
+                             src="assets/img/juri/paulo_antunes.jpg">
+                        <h4 class="text-white">Paulo Antunes</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="team-member">
+                    <a href="https://www.ua.pt/fis/person/10308556" target="_blank">
+                        <img alt="juri"
+                             class="img-responsive img-circle img-center img-thumbnail img-jury"
+                             src="assets/img/juri/paulo_lopes.jpg">
+                        <h4 class="text-white">Paulo Lopes</h4>
+                    </a>
+                </div>
+            </div>
     </div>
 </div>
 

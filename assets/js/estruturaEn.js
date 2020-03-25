@@ -43,15 +43,15 @@ $(document).ready(function () {
             title: "March<br> 12th, 14th, 15th and 18th"
         },
         ebecAveiro: {
-            sectionHeading: "EBEC Aveiro",
-            icones: [
-                {title: "Local Round", classe: "fa-map-pin"},
-                {title: "Modalities", classe: "fa-tools"},
+            icones: {
+                title1: "Local Round",
+                title2: "Modalities",
+                title3: "Program",
+                title4: "National Round"
                 /*
                                 {title: "Formation", classe: "fa-chalkboard-teacher"},
                 */
-                {title: "National Round", classe: "fa-award"},
-            ],
+            },
             seccoes: {
                 seccao1: {
                     ps: [
@@ -86,13 +86,54 @@ $(document).ready(function () {
                         }
                     ]
                 },
-                seccao3: [
+                seccao3: {
+                    title: "Program",
+                    schedule0: {
+                            diaSemana: "Thursday", diaMes: "March 12th",
+                            eventos: [
+                                {
+                                    hora: "11:00 - 18:00",
+                                    nome: "Job Fair",
+                                    local: "Complexo Pedagógico, University of Aveiro"
+                                },
+                                {
+                                    hora: "Still to announce",
+                                    nome: "Complementary Training",
+                                    local: "Complexo Pedagógico, University of Aveiro"
+                                }
+                            ]
+                    },
+                    schedule1: {
+                            diaSemana: "Saturday", diaMes: "March 14th",
+                            eventos: [
+                                {hora: "09:30 - 10:30", nome: "Check-in", local: "University of Aveiro"},
+                                {hora: "10:30 - 12:30", nome: "Opening Session", local: "University of Aveiro"},
+                                {hora: "12:30 - 13:00", nome: "Picture", local: "University of Aveiro"},
+                                {hora: "13:00 - 14:30", nome: "Lunch", local: "Crasto refectory, University of Aveiro"},
+                                {hora: "14:30 - 00:00", nome: "Competition", local: "ESSUA, University of Aveiro"}
+                            ]
+                    },
+                    schedule2: {
+                            diaSemana: "Sunday", diaMes: "March 15th",
+                            eventos: [
+                                {hora: "00:00 - 14:30", nome: "Competition", local: "ESSUA, University of Aveiro"}
+                            ]
+                    },
+                    schedule3: {
+                            diaSemana: "Wednesday", diaMes: "March 18th",
+                            eventos: [
+                                {hora: "13:30 - 18:00", nome: "Presentations", local: "University of Aveiro"},
+                                {hora: "18:00 - 19:00", nome: "Closing Session", local: "University of Aveiro"}
+                            ]
+                    }
+                }
+                /*[
                     "The BEST Aveiro will organize again one more edition of the <b class=\"text-orange\">BEST Training Days</b>, " +
                     "from EBEC Aveiro 2019, where you will have the opportunity to develop your abilities in a formation.",
                     "The formation will occur during the afternoon of <b class='text-orange'>March 15th</b> and it is restricted " +
                     "to the participants.",
                     "All participants on the formation will receive a participation certificate."
-                ],
+                ]*/,
                 seccao4: [
                     "The EBEC Portugal is the national final competition of engineering of BEST.",
                     "The EBEC Portugal is a National Round organized by 5 Local Groups of BEST from north to south of the " +
